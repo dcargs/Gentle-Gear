@@ -1,4 +1,5 @@
 <?php
+  require "controller.php";
 
   $pictures = '<div class="row">
                 <div class="col-md-3 block">
@@ -15,6 +16,7 @@
                 </div>
               </div>';
   $content = $pictures;
+  getItems();
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
