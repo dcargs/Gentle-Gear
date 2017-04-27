@@ -1,5 +1,8 @@
 $(function(){
-
+  $("#size").change(function(){
+    val2 = $("#size").val();
+    $('#price option[value=val2]').attr('selected','selected');
+  });
 });
 
 function modalFill(src, des, name){
