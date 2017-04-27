@@ -12,13 +12,6 @@
       margin: auto;
   }
 
-
-.carousel-inner > .item > a > img.pictureModal {
-      width: 400px;
-      height: 250px;
-      margin: auto;
-  }
-
 .block {
   display: inline-block;
   width: 25%;
