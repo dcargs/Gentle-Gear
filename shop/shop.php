@@ -26,6 +26,6 @@
   echo "<br>$itemsArray[2]<br>";
   echo "<br>$itemsArray[3]<br>";
   echo "<br>$itemsArray[4]<br>";
-  echo "<br><img class='img-responsive' src='$itemsArray[5]' alt='$itemsArray[6]'><br>";
+  echo "<br><img class='img-responsive' src='../$itemsArray[5]' alt='$itemsArray[6]'><br>";
 
 ?>
