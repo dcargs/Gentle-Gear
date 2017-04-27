@@ -24,8 +24,8 @@
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label for="description">Description</label>
-                        <textarea class="form-control" rows="5" id="description" val="" readonly></textarea>
+                        <label for="description">Description:</label>
+                        <input class="form-control" id="description" val="" readonly>
                       </div>
                     </div>
                   </div><hr>
