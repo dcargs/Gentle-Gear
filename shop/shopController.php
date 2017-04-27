@@ -19,8 +19,14 @@
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-offset-2 col-md-4">
                       <img class="pictureModal img-responsive" src="">
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" rows="5" id="description" val="" readonly></textarea>
+                      </div>
                     </div>
                   </div><hr>
                 </div>
