@@ -12,7 +12,7 @@
       margin: auto;
   }
 
-  .carousel-inner{
+  .modalCarousel{
     width:100%;
     max-height: 200px !important;
   }
