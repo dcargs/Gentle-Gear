@@ -1,7 +1,6 @@
 $(function(){
   $("#price").attr("disabled", true);
   $("#size").change(function(){
-    alert($("#size").val());
     $("#price").removeAttr("disabled");
     val2 = $("#size").val();
     $('#price').val(val2);
