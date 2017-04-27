@@ -24,6 +24,6 @@
                   <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                 </div>
                 <div class="text-center">
-                    <input class="btn btn-primary btn-md" type="submit" value="Login" name="submit" role="button" onclick="return login_submission()">
+                    <input class="btn btn-primary btn-md" type="submit" value="Login" name="submit" role="button" onclick="login_submission()">
                 </div>';
  ?>
