@@ -17,22 +17,18 @@
     }
     $stmt->execute();
     $result = $stmt->get_result();
-    // $array = $result->fetch_array();
-    // print_r($array);
     return $result;
   }
 
   function q_getSizeData(){
     $conn = connectDB();
-    $query = "";
+    $query = "SELECT id, name FROM size";
     $stmt = $conn->stmt_init();
     if(!$stmt->prepare($query)){
       exit();
     }
     $stmt->execute();
     $result = $stmt->get_result();
-    $array = $result->fetch_array();
-    // print_r($array);
-    return $array;
+    return $result;
   }
  ?>

@@ -6,11 +6,6 @@
     return $result;
   }
 
-  function getSizeData(){
-    $result = q_getSizeData();
-    return $result;
-  }
-
   function buildPictures(){
     $result = getItems();
     $pictures = "";
@@ -33,7 +28,27 @@
     return $pictures;
   }
 
+  function sizeData(){
+    $result = q_getSizeData();
+    $sizeData = "";
+    while($row = $result->fetch_array()) {
+      $rows[] = $row;
+    }
+    $sizeData .= "<div class='form-group'>
+                    <label for='size'>Select Size:</label>
+                    <select class='form-control' id='size'>";
+    foreach($rows as $row){
+      // $id = '"'.$row[0].'"';
+      // $name = '"'.$row[1].'"';
+      $sizeData .= "<option value='$row[0]'>$row[1]</option>";
+    }
+    $sizeData .= "</select>
+                </div>";
+  return $sizeData;
+  }
+
   function printModal(){
+    $sizeData = sizeData();
     return '<!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -58,6 +73,7 @@
                         <label for="description">Description:</label>
                         <blockquote><p id="description"></p></blockquote>
                       </div>
+                      '.$sizeData.'
                     </div>
                   </div><hr>
                 </div>
