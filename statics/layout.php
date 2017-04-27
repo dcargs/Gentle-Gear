@@ -17,8 +17,8 @@
     <div class="container">
       <div class="jumbotron">
         <?php if($currentPage != 'login.php'){
-          ?>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          echo'<div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -29,8 +29,8 @@
                 <img src="statics/images/car1.JPG" alt="Gentle Gear" >
               </div>
             </div>
-          </div>
-      <?php  } ?>
+          </div>';
+       } ?>
 
 
         <div id="menu">
