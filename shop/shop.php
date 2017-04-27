@@ -1,5 +1,5 @@
 <?php
-  // include "controller.php";
+  include "shopController.php";
 
   // $itemsArray = getItems();
   $pictures = '<div class="row">
