@@ -2,5 +2,5 @@
 
   $script = '<script src="../../statics/scripts.js"></script>';
   $header = "Dashboard";
-  require "../../statics/layout.php";
+  require "../statics/layout.php";
  ?>
