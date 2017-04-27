@@ -67,7 +67,9 @@
         <div class="row">
           <h2 class="text-center"><?= $header ?></h2>
         </div><hr>
-        <?= $content ?>
+        <div class="container">
+          <?= $content ?>
+        </div>
         <?= $message ?>
       </div>
     </div>

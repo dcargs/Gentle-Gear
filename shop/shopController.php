@@ -28,8 +28,8 @@
                       <img onclick='modalFill($url, $des, $name)' class='img-responsive' src='../$row[3]' alt='$row[4]'>
                     </div>";
     }
-    // $pictures .= "</div>
-    //           </div>";
+    $pictures .= "</div>
+              </div>";
     return $pictures;
   }
 
