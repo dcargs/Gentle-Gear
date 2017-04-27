@@ -20,7 +20,7 @@
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-md-3 block">
-                      <img class="pictureModal img-responsive" src=''>
+                      <img class="pictureModal img-responsive" src="">
                     </div>
                   </div><hr>
                 </div>
