@@ -4,7 +4,7 @@ $(function(){
 
 function modalFill(src, des, name){
   $(".pictureModal").attr('src', '../' + src);
-  $("#description").val(des);
+  $("#description").html(des);
   $("#name").val(name);
   $("#myModal").modal();
 }

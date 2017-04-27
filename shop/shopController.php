@@ -30,22 +30,6 @@
     }
     $pictures .= "</div>
               </div>";
-    // $result = $result->fetch_array();
-
-    // for ($i = 0; $i < sizeOf($result); $i++) {
-    //   $pictures .= "<br />$result[$i]";
-    // }
-
-    // $pictures .= "<br /><br /><div id='items'>";
-    //   $pictures .= "<div class='row'>";
-    //   $modalSrc = '"'.$result[3].'"';
-    //   $des = '"'.$result[2].'"';
-    //   $name = '"'.$result[1].'"';
-    //     $pictures .= "<div class='picture col-md-3 block'>
-    //                     <img onclick='modalFill($modalSrc, $des, $name)' class='img-responsive' src='../$result[3]' alt='$result[4]'>
-    //                   </div>";
-    //   $pictures .= "</div>
-    //             </div>";
     return $pictures;
   }
 
@@ -72,7 +56,7 @@
                       </div>
                       <div class="form-group">
                         <label for="description">Description:</label>
-                        <input class="form-control" id="description" val="" readonly>
+                        <p class="form-control" id="description"></p>
                       </div>
                     </div>
                   </div><hr>
