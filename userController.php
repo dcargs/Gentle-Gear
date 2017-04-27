@@ -13,7 +13,6 @@
         echo $action;
         break;
     }
-    exit(0);
   }
 
   $loginForm = '<div class="form-group">
