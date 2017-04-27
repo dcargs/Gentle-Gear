@@ -1,4 +1,5 @@
 <?php
+  ob_start();
   require "userController.php";
 
   $script = '<script src="statics/userScripts.js"></script>';
