@@ -2,8 +2,8 @@
 include "model/shopDAL.php";
 
   function getItems(){
-    q_getItems();
-    return 0;
+    $result = q_getItems();
+    return $result;
   }
 
  ?>
