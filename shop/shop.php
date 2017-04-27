@@ -19,9 +19,8 @@
 
 
      foreach ($result as $data) {
-       echo $data;
+       $content += $data;
      }
-     echo "anything";
 
 
   // $pictures = "<div id='items'>";
