@@ -6,6 +6,26 @@
     return $result;
   }
 
+  function getSizeData(){
+    $result = q_getSizeData();
+    return $result;
+  }
+
+  function buildPictures(){
+    $result = getItems();
+    $pictures = "<div id='items'>";
+      $pictures .= "<div class='row'>";
+      $modalSrc = '"'.$result[3].'"';
+      $des = '"'.$result[2].'"';
+      $name = '"'.$result[1].'"';
+        $pictures .= "<div class='picture col-md-3 block'>
+                        <img onclick='modalFill($modalSrc, $des, $name)' class='img-responsive' src='../$result[3]' alt='$result[4]'>
+                      </div>";
+      $pictures .= "</div>
+                </div>";
+    return $pictures;
+  }
+
   function printModal(){
     return '<!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">

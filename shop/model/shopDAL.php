@@ -21,4 +21,18 @@
     // print_r($array);
     return $array;
   }
+
+  function q_getSizeData(){
+    $conn = connectDB();
+    $query = "";
+    $stmt = $conn->stmt_init();
+    if(!$stmt->prepare($query)){
+      exit();
+    }
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $array = $result->fetch_array();
+    // print_r($array);
+    return $array;
+  }
  ?>
