@@ -11,9 +11,9 @@
                     <input class="btn btn-primary btn-md" type="submit" value="Login" name="submit" role="button" onclick="return login_submission()">
                 </div>';
 
-  if(isset($_POST['action'])){
+  if(isset($_POST['action']) && !empty($_POST['action'])){
     include "model/userDAL.php";
-    $action = htmlspecialchars($_POST['action']);
+    $action = $_POST['action'];
     switch ($action) {
       case 'loginValidate':
         $user = htmlspecialchars($_POST['user']);
