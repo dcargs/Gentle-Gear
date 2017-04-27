@@ -1,6 +1,6 @@
 <?php
   function connectDB(){
-    require_once("../../secure/database.php");
+    require_once("../secure/database.php");
     $conn = new mysqli(HOST, USERNAME, PASSWORD, DBNAME);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
