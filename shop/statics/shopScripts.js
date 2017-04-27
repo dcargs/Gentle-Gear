@@ -3,6 +3,6 @@ $(function(){
 });
 
 function modalFill(src){
-  $(".pictureModal").html(src);
+  $(".pictureModal").attr('href', src);
   $("#myModal").modal();
 }
