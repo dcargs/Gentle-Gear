@@ -52,7 +52,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label for="name">Name:</label>
-                        <blockquote><strong><p id="name"></p></strong></blockquote>
+                        <blockquote><p><strong id="name"></strong></p></blockquote>
                       </div>
                       <div class="form-group">
                         <label for="description">Description:</label>
