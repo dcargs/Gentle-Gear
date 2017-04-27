@@ -1,5 +1,5 @@
 <?php
 
   $header = "Dashboard";
-  require "statics/layout.php";
+  require "../../statics/layout.php";
  ?>
