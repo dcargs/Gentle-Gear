@@ -16,17 +16,22 @@
   //                 <img class='img-responsive' src='../statics/images/shop/utilityFront.jpg' alt='Utility Front' >
   //               </div>
   //             </div>";
-  $pictures = "<div id='items'>";
-  if($result->num_rows > 0){
-    $pictures += "<div class='row'>";
-    while($row = $result->fetch_array(MYSQLI_NUM)){
-      $pictures += "<div class='col-md-3 block'>
-              <img class='img-responsive' src='../$row[5]' alt='$row[6]'>
-            </div>";
-    }
-  }
-  $pictures += "</div></div>";
-  $content = $pictures;
+
+   while($row = $result->fetch_array(MYSQLI_NUM)){
+     foreach ($row as $data) {
+       echo $data;
+     }
+   }
+
+  // $pictures = "<div id='items'>";
+  // if($result->num_rows > 0){
+  //   $pictures += "<div class='row'>";
+  //   while($row = $result->fetch_array(MYSQLI_NUM)){
+  //     $pictures += "<div class='col-md-3 block'><img class='img-responsive' src='../$row[5]' alt='$row[6]'></div>";
+  //   }
+  // }
+  // $pictures += "</div></div>";
+  // $content = $pictures;
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
