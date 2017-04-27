@@ -19,7 +19,7 @@
 
 
      foreach ($result as $data) {
-       $content = $content + $data;
+       $content .= $data;
      }
 
 
