@@ -19,7 +19,7 @@
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <div class="col-md-4 block">
+                    <div class="col-md-4">
                       <img class="pictureModal img-responsive" src="">
                     </div>
                   </div><hr>
