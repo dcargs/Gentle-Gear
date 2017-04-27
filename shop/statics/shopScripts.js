@@ -1,6 +1,8 @@
 $(function(){
-  $(".picture").click(function(){
-        $("#myModal").modal();
-        $(".pictureModal").html($(this).html());
-    });
+
 });
+
+function modalFill(src){
+  $(".pictureModal").html(src);
+  $("#myModal").modal();
+}

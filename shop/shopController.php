@@ -6,7 +6,7 @@
     return $result;
   }
 
-  function printModal(){
+  function printModal($src){
     return '<!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -19,8 +19,8 @@
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <div class="pictureModal col-md-3 block">
-
+                    <div class="col-md-3 block">
+                      <img class="pictureModal img-responsive" src='.$src.'>
                     </div>
                   </div><hr>
                 </div>
