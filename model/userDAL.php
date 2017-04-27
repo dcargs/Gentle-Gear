@@ -22,10 +22,10 @@
     $stmt->execute();
     $result = $stmt->get_result();
     $result = $result->fetch_array();
-    if($pass == $result[0]){
+    if($pass == $result[1]){
       return 1;
     } else {
-      return $result[0];
+      return $result[1];
     }
   }
 
