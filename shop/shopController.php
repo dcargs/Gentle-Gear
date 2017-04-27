@@ -19,7 +19,7 @@
       $rows[] = $row;
     }
     foreach($rows as $row){
-      $pictures .= "<br>$row[]";
+      $pictures .= "<br>$row[0]<br>$row[1]<br>$row[2]<br>$row[3]<br>$row[4]";
     }
     $result = $result->fetch_array();
 
