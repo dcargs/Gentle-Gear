@@ -1,5 +1,6 @@
 $(function(){
   $("#size").change(function(){
+    alert($("#size").val());
     val2 = $("#size").val();
     $('#price option[value=val2]').attr('selected','selected');
   });
