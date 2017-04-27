@@ -35,7 +35,7 @@
                     <li><a href="../../contact.php">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="btn-danger" href="../../logout.php">Logout</a></li>
+                    <li><a class="btn btn-danger" href="../../logout.php">Logout</a></li>
                 </ul>
             </div>
           </nav>
