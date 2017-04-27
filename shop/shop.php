@@ -23,9 +23,21 @@
   // echo "<br>$itemsArray[0]<br>";
   // echo "<br>$itemsArray[1]<br>";
   // json
-  $json = json_decode($itemsArray[2], true);
-  echo $json["Sizes"][0];
-  print_r($json);
+  // $json = json_decode($itemsArray[2], true);
+  // echo $json["Sizes"][0];
+  // print_r($json);
+
+  $jsonIterator = new RecursiveIteratorIterator(
+    new RecursiveArrayIterator(json_decode($itemsArray[2], TRUE)),
+    RecursiveIteratorIterator::SELF_FIRST);
+
+  foreach ($jsonIterator as $key => $val) {
+      if(is_array($val)) {
+          echo "$key:\n";
+      } else {
+          echo "$key => $val\n";
+      }
+  }
   // echo "<br>jsonArray: $itemsArray[2]<br>";
   // echo "<br>$itemsArray[3]<br>";
 
