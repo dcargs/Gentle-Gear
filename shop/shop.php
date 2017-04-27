@@ -17,11 +17,11 @@
   //               </div>
   //             </div>";
 
-   while($row = $result->fetch_array(MYSQLI_NUM)){
-     foreach ($row as $data) {
+
+     foreach ($result as $data) {
        echo $data;
      }
-   }
+
 
   // $pictures = "<div id='items'>";
   // if($result->num_rows > 0){
