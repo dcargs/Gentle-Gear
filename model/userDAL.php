@@ -21,14 +21,13 @@
     $stmt->bind_param("s", $user);
     $stmt->execute();
     $result = $stmt->get_result();
-    // $result = $result;
-    return $result;
-  //   if($pass == $result['password']){
-  //     return 1;
-  //   } else {
-  //     return $result['password'];
-  //   }
-  // }
-}
+    $result = $result->fetch_assoc();
+    // print_r($result);
+    if($pass == $result['password']){
+      return 1;
+    } else {
+      return $result['password'];
+    }
+  }
 
  ?>
