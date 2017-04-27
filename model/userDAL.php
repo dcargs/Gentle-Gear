@@ -9,8 +9,6 @@
   }
 
   function q_login($user, $pass){
-    // echo 'in DAL';
-
     $conn = connectDB();
     $query = "SELECT password FROM user WHERE id=?";
     $stmt = $conn->stmt_init();
