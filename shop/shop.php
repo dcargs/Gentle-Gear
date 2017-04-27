@@ -1,7 +1,7 @@
 <?php
   include "shopController.php";
 
-  $itemsArray = getItems();
+  $result = getItems();
   // $pictures = "<div class='row'>
   //               <div class='col-md-3 block'>
   //                 <img class='img-responsive' src='../$itemsArray[5]' alt='$itemsArray[6]'>
@@ -21,7 +21,7 @@
     $pictures += "<div class='row'>";
     while($row = $result->fetch_array(MYSQLI_NUM)){
       $pictures += "<div class='col-md-3 block'>
-              <img class='img-responsive' src='../$itemsArray[5]' alt='$itemsArray[6]'>
+              <img class='img-responsive' src='../$row[5]' alt='$row[6]'>
             </div>";
     }
   }
