@@ -17,8 +17,9 @@
     }
     $stmt->execute();
     $result = $stmt->get_result();
-    $array = $result->fetch_array();
+    return $result;
+    // $array = $result->fetch_array();
     // print_r($array);
-    return $array;
+    // return $array;
   }
  ?>
