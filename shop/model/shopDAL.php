@@ -31,4 +31,16 @@
     $result = $stmt->get_result();
     return $result;
   }
+
+  function q_getPriceData(){
+    $conn = connectDB();
+    $query = "SELECT id, price FROM size";
+    $stmt = $conn->stmt_init();
+    if(!$stmt->prepare($query)){
+      exit();
+    }
+    $stmt->execute();
+    $result = $stmt->get_result();
+    return $result;
+  }
  ?>

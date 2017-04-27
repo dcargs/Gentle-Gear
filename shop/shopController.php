@@ -38,8 +38,6 @@
                     <label for='size'>Select Size:</label>
                     <select class='form-control' id='size'>";
     foreach($rows as $row){
-      // $id = '"'.$row[0].'"';
-      // $name = '"'.$row[1].'"';
       $sizeData .= "<option value='$row[0]'>$row[1]</option>";
     }
     $sizeData .= "</select>
@@ -47,8 +45,26 @@
   return $sizeData;
   }
 
+  function priceData(){
+    $result = q_getPriceData();
+    $priceData = "";
+    while($row = $result->fetch_array()) {
+      $rows[] = $row;
+    }
+    $priceData .= "<div class='form-group'>
+                    <label for='price'>Price:</label>
+                    <select class='form-control' id='price'>";
+    foreach($rows as $row){
+      $priceData .= "<option value='$row[0]'>$row[1]</option>";
+    }
+    $priceData .= "</select>
+                </div>";
+  return $priceData;
+  }
+
   function printModal(){
     $sizeData = sizeData();
+    $priceData = priceData();
     return '<!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -74,6 +90,7 @@
                         <blockquote><p id="description"></p></blockquote>
                       </div>
                       '.$sizeData.'
+                      '.$priceData.'
                     </div>
                   </div><hr>
                 </div>
