@@ -14,11 +14,6 @@
 
 .block {
   display: inline-block;
-  width: 100%;
-  margin: auto;
-}
-
-.shopImg {
-  width: auto;
+  width: 25%;
   margin: auto;
 }
