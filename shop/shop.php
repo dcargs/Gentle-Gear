@@ -20,12 +20,13 @@
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
-  echo "<br>$itemsArray[0]<br>";
-  echo "<br>$itemsArray[1]<br>";
+  // echo "<br>$itemsArray[0]<br>";
+  // echo "<br>$itemsArray[1]<br>";
   // json
   $json = json_decode($itemsArray[2], true);
   echo $json["Sizes"][0];
-  echo "<br>jsonArray: $itemsArray[2]<br>";
-  echo "<br>$itemsArray[3]<br>";
+  print_r($json);
+  // echo "<br>jsonArray: $itemsArray[2]<br>";
+  // echo "<br>$itemsArray[3]<br>";
 
 ?>
