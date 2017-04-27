@@ -10,13 +10,11 @@
 
   function q_getItems(){
     $conn = connectDB();
-    $query = "SELECT * FROM item WHERE";
+    $query = "SELECT * FROM item";
     $stmt = $conn->stmt_init();
     if(!$stmt->prepare($query)){
       exit();
     }
-
-    $stmt->bind_param("s", $user);
     $stmt->execute();
     $result = $stmt->get_result();
     $array = $result->fetch_array();
