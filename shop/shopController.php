@@ -14,8 +14,8 @@
   function buildPictures(){
     $result = getItems();
     $pictures = "";
-    foreach ($result as $data) {
-      $pictures += "<br />$data";
+    for ($i = 0; $i < sizeOf($result); $i++) {
+      $pictures += "<br />$result[$i]";
     }
 
     $pictures += "<br /><br /><div id='items'>";
