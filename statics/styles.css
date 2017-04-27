@@ -5,3 +5,7 @@
 #text-white:hover {
   color: inherit;
 }
+
+#text-white:hover:active{
+  color: inherit;
+}
