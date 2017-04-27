@@ -5,7 +5,7 @@
     switch ($action) {
       case 'loginValidate':
         $user = htmlspecialchars($_POST['user']);
-        $pass = htmlspecialchars($POST['pass']);
+        $pass = htmlspecialchars($_POST['pass']);
         $result = q_login($user, $pass);
         echo $result;
         break;

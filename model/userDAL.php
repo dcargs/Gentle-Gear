@@ -26,7 +26,7 @@
     if($pass == $result[0]){
       return 0;
     } else {
-      return $pass;
+      return $result[0];
     }
   }
 
