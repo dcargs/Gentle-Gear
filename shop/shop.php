@@ -16,17 +16,17 @@
   //                 <img class='img-responsive' src='../statics/images/shop/utilityFront.jpg' alt='Utility Front' >
   //               </div>
   //             </div>";
-  $pictures = "";
+  $pictures = "<div id='items'>";
   if($result->num_rows > 0){
-    echo "<div class='row'>";
+    $pictures += "<div class='row'>";
     while($row = $result->fetch_array(MYSQLI_NUM)){
-      echo "<div class='col-md-3 block'>
+      $pictures += "<div class='col-md-3 block'>
               <img class='img-responsive' src='../$row[5]' alt='$row[6]'>
             </div>";
     }
   }
-  echo "</div>";
-  // $content = $pictures;
+  $pictures += "</div></div>";
+  $content = $pictures;
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
