@@ -29,10 +29,6 @@
 
             <div class="item active">
               <img src="statics/images/car1.JPG" alt="Chania" >
-              <div class="carousel-caption">
-                <h3>Welcome to Gentle Gear</h3>
-                <p>Checkout our shop to see how you can support us.</p>
-              </div>
             </div>
 
             <!-- <div class="item">
