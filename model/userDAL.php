@@ -24,7 +24,7 @@
     $result = $result->fetch_array();
     // print_r($result);
     if($pass == $result[0]){
-      return 1;
+      return 'bad';
     } else {
       return $result[0];
     }

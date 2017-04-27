@@ -12,7 +12,7 @@ function login_submission(){
              pass: pass},
       type: 'post',
       success: function(output){
-        if(output == '1'){
+        if(output == 'bad'){
           window.location.href = 'dashboard/views/dashboard.php';
         } else {
           console.log(output);
