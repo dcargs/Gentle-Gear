@@ -56,7 +56,7 @@
                       </div>
                       <div class="form-group">
                         <label for="description">Description:</label>
-                        <p class="form-control" id="description"></p>
+                        <blockquote><p id="description"></p></blockquote>
                       </div>
                     </div>
                   </div><hr>
