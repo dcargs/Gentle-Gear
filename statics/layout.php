@@ -32,7 +32,7 @@
           <div class="carousel-inner" role="listbox">
 
             <div class="item active">
-              <img src="statics/images/car1.jpg" alt="Gentle Gear" >
+              <img src="statics/images/car1.JPG" alt="Gentle Gear" >
             </div>
 
             <!-- <div class="item">
