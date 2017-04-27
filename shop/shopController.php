@@ -19,14 +19,8 @@
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner modalCarousel" role="listbox">
-                      <div class="item active">
-                        <img class="pictureModal img-responsive" src="">
-                      </div>
+                    <div class="col-md-8 block">
+                      <img class="pictureModal img-responsive" src="">
                     </div>
                   </div><hr>
                 </div>
