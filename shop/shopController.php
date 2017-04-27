@@ -24,6 +24,10 @@
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input class="form-control" id="name" val="" readonly>
+                      </div>
+                      <div class="form-group">
                         <label for="description">Description:</label>
                         <input class="form-control" id="description" val="" readonly>
                       </div>
