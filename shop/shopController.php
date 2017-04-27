@@ -13,7 +13,12 @@
 
   function buildPictures(){
     $result = getItems();
-    $pictures = "<div id='items'>";
+    $pictures = "";
+    foreach ($result as $data) {
+      $pictures += "<br />$data";
+    }
+
+    $pictures += "<br /><br /><div id='items'>";
       $pictures .= "<div class='row'>";
       $modalSrc = '"'.$result[3].'"';
       $des = '"'.$result[2].'"';
