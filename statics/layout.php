@@ -1,5 +1,6 @@
 <?php ob_start();
-      session_start();?>
+      session_start();
+      $currentPage = $_SERVER['PHP_SELF'];?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,6 +16,9 @@
   <body>
     <div class="container">
       <div class="jumbotron">
+        <?php if($currentPage == 'login.php'){
+
+        } ?>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -28,7 +32,7 @@
           <div class="carousel-inner" role="listbox">
 
             <div class="item active">
-              <img src="statics/images/car1.JPG" alt="Gentle Gear" >
+              <img src="statics/images/car1.png" alt="Gentle Gear" >
             </div>
 
             <!-- <div class="item">
@@ -91,7 +95,6 @@
                 <ul class="nav navbar-nav navbar-right">
                   <?php
                     if(isset($_SESSION['status'])){
-                      $currentPage = $_SERVER['PHP_SELF'];
                       echo '<li><a class="btn btn-danger" id="text-white" href="logout.php?page='.$currentPage.'">Logout</a></li>';
                     } else {
                       echo '<li><a class="btn btn-primary" id="text-white" href="login.php">Login</a></li>';
