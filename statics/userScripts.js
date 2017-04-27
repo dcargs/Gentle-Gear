@@ -5,7 +5,7 @@ function login_submission(){
     user = $("#user").val();
     pass = $("#password").val();
     $.ajax({
-      url: 'login.php',
+      url: 'userController.php',
       data: {action: 'loginValidate',
              user: user,
              pass: pass},
