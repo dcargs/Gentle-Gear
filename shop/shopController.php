@@ -52,7 +52,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label for="name">Name:</label>
-                        <input class="form-control" id="name" val="" readonly>
+                        <blockquote><p id="name"></p></blockquote>
                       </div>
                       <div class="form-group">
                         <label for="description">Description:</label>
