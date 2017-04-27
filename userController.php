@@ -6,7 +6,8 @@
       case 'loginValidate':
         $user = htmlspecialchars($_POST['user']);
         $pass = htmlspecialchars($POST['pass']);
-        echo q_login($user, $pass);
+        $result = q_login($user, $pass);
+        print_r($result);
         break;
 
       default:

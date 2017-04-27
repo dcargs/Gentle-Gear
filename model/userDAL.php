@@ -22,12 +22,12 @@
     $stmt->execute();
     $result = $stmt->get_result();
     $result = $result->fetch_assoc();
-    print_r($result);
-  //   if($pass == $result['password']){
-  //     return 1;
-  //   } else {
-  //     return $result['password'];
-  //   }
-  // }
+    // print_r($result);
+    if($pass == $result['password']){
+      return 1;
+    } else {
+      return $result['password'];
+    }
+  }
 
  ?>
