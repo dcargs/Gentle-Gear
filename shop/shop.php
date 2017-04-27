@@ -21,6 +21,7 @@
      foreach ($result as $data) {
        echo $data;
      }
+     echo "anything";
 
 
   // $pictures = "<div id='items'>";
