@@ -7,8 +7,7 @@
         $user = htmlspecialchars($_POST['user']);
         $pass = htmlspecialchars($POST['pass']);
         $result = q_login($user, $pass);
-        print_r($result);
-        echo $pass;
+        echo $result;
         break;
 
       default:

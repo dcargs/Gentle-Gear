@@ -21,12 +21,12 @@
     $stmt->bind_param("s", $user);
     $stmt->execute();
     $result = $stmt->get_result();
-    $result = $result->fetch_assoc();
+    $result = $result->fetch_array();
     // print_r($result);
-    if($pass == $result['password']){
+    if($pass == $result[0]){
       return 1;
     } else {
-      return $result['password'];
+      return $result[0];
     }
   }
 
