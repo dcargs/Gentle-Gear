@@ -19,24 +19,33 @@
       $rows[] = $row;
     }
     foreach($rows as $row){
-      $pictures .= "<br>$row[0]<br>$row[1]<br>$row[2]<br>$row[3]<br>$row[4]";
+      $id = '"'.$row[0].'"';
+      $name = '"'.$row[1].'"';
+      $des = '"'.$row[2].'"';
+      $url = '"'.$row[3].'"';
+      $alt = '"'.$row[4].'"';
+      $pictures .= "<div class='picture col-md-3 block'>
+                      <img onclick='modalFill($url, $des, $name)' class='img-responsive' src='../$row[2]' alt='$row[4]'>
+                    </div>";
     }
-    $result = $result->fetch_array();
+    $pictures .= "</div>
+              </div>";
+    // $result = $result->fetch_array();
 
     // for ($i = 0; $i < sizeOf($result); $i++) {
     //   $pictures .= "<br />$result[$i]";
     // }
 
-    $pictures .= "<br /><br /><div id='items'>";
-      $pictures .= "<div class='row'>";
-      $modalSrc = '"'.$result[3].'"';
-      $des = '"'.$result[2].'"';
-      $name = '"'.$result[1].'"';
-        $pictures .= "<div class='picture col-md-3 block'>
-                        <img onclick='modalFill($modalSrc, $des, $name)' class='img-responsive' src='../$result[3]' alt='$result[4]'>
-                      </div>";
-      $pictures .= "</div>
-                </div>";
+    // $pictures .= "<br /><br /><div id='items'>";
+    //   $pictures .= "<div class='row'>";
+    //   $modalSrc = '"'.$result[3].'"';
+    //   $des = '"'.$result[2].'"';
+    //   $name = '"'.$result[1].'"';
+    //     $pictures .= "<div class='picture col-md-3 block'>
+    //                     <img onclick='modalFill($modalSrc, $des, $name)' class='img-responsive' src='../$result[3]' alt='$result[4]'>
+    //                   </div>";
+    //   $pictures .= "</div>
+    //             </div>";
     return $pictures;
   }
 
