@@ -20,5 +20,9 @@
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
-  print_r($itemsArray);
+  echo "<br>$itemsArray[0]<br>";
+  echo "<br>$itemsArray[1]<br>";
+  echo "<br>$itemsArray[2]<br>";
+  echo "<br>$itemsArray[3]<br>";
+
 ?>
