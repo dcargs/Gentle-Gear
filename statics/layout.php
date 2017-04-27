@@ -28,7 +28,7 @@
           <div class="carousel-inner" role="listbox">
 
             <div class="item active">
-              <img src="statics/images/car1.JPG" alt="Chania" >
+              <img src="statics/images/car1.JPG" alt="Gentle Gear" >
             </div>
 
             <!-- <div class="item">
@@ -83,7 +83,7 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="shop/shop.php">Shop</a></li>
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
