@@ -16,9 +16,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <?= $currentPage ?>
         <?php if($currentPage != '/Final_Project/login.php'){
-
           echo'<div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
