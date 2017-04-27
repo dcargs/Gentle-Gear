@@ -12,21 +12,22 @@
     // echo 'in DAL';
 
     $conn = connectDB();
-    $query = "SELECT password FROM user WHERE id=?";
-    $stmt = $conn->stmt_init();
-    if(!$stmt->prepare($query)){
-      exit();
-    }
-
-    $stmt->bind_param("s", $user);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $result = $result->fetch_array();
-    if($pass == $result[0]){
-      return 1;
-    } else {
-      return $result[0];
-    }
+    return $conn;
+    // $query = "SELECT password FROM user WHERE id=?";
+    // $stmt = $conn->stmt_init();
+    // if(!$stmt->prepare($query)){
+    //   exit();
+    // }
+    //
+    // $stmt->bind_param("s", $user);
+    // $stmt->execute();
+    // $result = $stmt->get_result();
+    // $result = $result->fetch_array();
+    // if($pass == $result[0]){
+    //   return 1;
+    // } else {
+    //   return $result[0];
+    // }
   }
 
  ?>
