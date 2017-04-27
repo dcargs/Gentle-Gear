@@ -1,6 +1,7 @@
 function login_submission(){
   if($(".form-control").val() == ''){
     alert("You must fill out all of the fields to proceed");
+    return false;
   } else {
     user = $("#user").val();
     pass = $("#password").val();
