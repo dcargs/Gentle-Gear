@@ -4,7 +4,7 @@ $(function(){
     alert($("#size").val());
     $("#price").removeAttr("disabled");
     val2 = $("#size").val();
-    $('#price option[value=val2]').attr('selected','selected');
+    $('#price').val(val2);
     $("#price").attr("disabled", true);
   });
 });
