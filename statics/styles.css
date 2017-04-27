@@ -12,8 +12,8 @@
       margin: auto;
   }
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img.pictureModal {
+
+.carousel-inner > .item > a > img.pictureModal {
       width: 400px;
       height: 250px;
       margin: auto;
