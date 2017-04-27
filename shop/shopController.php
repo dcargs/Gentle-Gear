@@ -53,7 +53,7 @@
     }
     $priceData .= "<div class='form-group'>
                     <label for='price'>Price:</label>
-                    <select class='form-control' id='price' disabled>";
+                    <select class='form-control' id='price'>";
     foreach($rows as $row){
       $priceData .= "<option value='$row[0]'>$row[1]</option>";
     }
