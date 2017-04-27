@@ -1,5 +1,5 @@
 <?php
-  require "controller.php";
+  include "controller.php";
 
   $pictures = '<div class="row">
                 <div class="col-md-3 block">
