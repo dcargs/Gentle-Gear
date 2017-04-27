@@ -3,17 +3,19 @@
     include "model/userDAL.php";
     $action = $_POST['action'];
     switch ($action) {
-      case 'loginValidate':
-        $user = htmlspecialchars($_POST['user']);
-        $pass = htmlspecialchars($_POST['pass']);
-        $result = q_login($user, $pass);
-        echo $result;
-        break;
+      case 'loginValidate': login(); break;
 
-      default:
-        echo $action;
-        break;
+      default: echo $action; break;
     }
+  }
+
+  function login(){
+    session_start();
+    $_SESSION['status'] = "authenticated";
+    $user = htmlspecialchars($_POST['user']);
+    $pass = htmlspecialchars($_POST['pass']);
+    $result = q_login($user, $pass);
+    echo $result;
   }
 
   $loginForm = '<div class="form-group">
