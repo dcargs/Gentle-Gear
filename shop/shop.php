@@ -14,7 +14,7 @@
                   <img src="../statics/images/shop/utilityFront.JPG" alt="Utility Front" >
                 </div>
               </div>';
-
+  $content += $pictures;
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
