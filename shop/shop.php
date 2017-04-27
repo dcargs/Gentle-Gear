@@ -1,7 +1,7 @@
 <?php
-  include "controller.php";
+  // include "controller.php";
 
-  $itemsArray = getItems();
+  // $itemsArray = getItems();
   $pictures = '<div class="row">
                 <div class="col-md-3 block">
                   <img class="img-responsive" src="../statics/images/shop/bikeHappyFront.jpg" alt="Bike Happy Front" >
@@ -20,5 +20,5 @@
   $script = '<script src="../statics/scripts.js"></script>';
   $header = "Shop";
   require "statics/layout.php";
-  print_r($itemsArray);
+  // print_r($itemsArray);
 ?>
