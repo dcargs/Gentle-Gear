@@ -18,7 +18,7 @@
       $pictures .= "<br />$result[$i]";
     }
 
-    $pictures += "<br /><br /><div id='items'>";
+    $pictures .= "<br /><br /><div id='items'>";
       $pictures .= "<div class='row'>";
       $modalSrc = '"'.$result[3].'"';
       $des = '"'.$result[2].'"';
