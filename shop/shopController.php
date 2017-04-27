@@ -25,7 +25,7 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                       <div class="item active">
-                        <img class="height pictureModal img-responsive" src="">
+                        <img class="pictureModal img-responsive" src="">
                       </div>
                     </div>
                   </div><hr>
