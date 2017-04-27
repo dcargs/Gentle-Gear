@@ -26,5 +26,6 @@
   echo "<br>$itemsArray[2]<br>";
   echo "<br>$itemsArray[3]<br>";
   echo "<br>$itemsArray[4]<br>";
+  echo "<br>$itemsArray[5]<br>";
 
 ?>
