@@ -15,12 +15,13 @@
     $result = getItems();
     $pictures = "";
 
-    while($row = $result) {
+    while($row = $result->fetch_array()) {
       $rows[] = $row;
     }
     foreach($rows as $row){
       $pictures .= "<br>$row";
     }
+    $result = $result->fetch_array();
 
     // for ($i = 0; $i < sizeOf($result); $i++) {
     //   $pictures .= "<br />$result[$i]";
