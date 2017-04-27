@@ -14,9 +14,17 @@
   function buildPictures(){
     $result = getItems();
     $pictures = "";
-    for ($i = 0; $i < sizeOf($result); $i++) {
-      $pictures .= "<br />$result[$i]";
+
+    while($row = $result) {
+      $rows[] = $row;
     }
+    foreach($rows as $row){
+      $pictures .= "<br>$row";
+    }
+
+    // for ($i = 0; $i < sizeOf($result); $i++) {
+    //   $pictures .= "<br />$result[$i]";
+    // }
 
     $pictures .= "<br /><br /><div id='items'>";
       $pictures .= "<div class='row'>";
