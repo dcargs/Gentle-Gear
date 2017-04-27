@@ -18,12 +18,9 @@
   //             </div>";
 
   $pictures = "<div id='items'>";
-  if($result->num_rows > 0){
-    $pictures .= "<div class='row'>";
-    while($row = $result->fetch_array(MYSQLI_NUM)){
-      $pictures .= "<div class='col-md-3 block'><img class='img-responsive' src='../$row[5]' alt='$row[6]'></div>";
-    }
-  }
+  $pictures .= "<div class='row'>";
+  $pictures .= "<div class='col-md-3 block'><img class='img-responsive' src='../$result[5]' alt='$result[6]'></div>";
+
   $pictures .= "</div></div>";
   $content = $pictures;
   $script = '<script src="../statics/scripts.js"></script>';
