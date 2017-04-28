@@ -3,5 +3,5 @@ function modalFill(){
 }
 
 function createItem(){
-  console.log($(".modal-body > .row > .col-md-4 input").val());
+  console.log($(".modal-body .row .col-md-4 input").val());
 }
