@@ -1,5 +1,7 @@
 <?php
-  // include 'model/upload.php';
+  if(isset($_POST['submit'])){
+    require 'model/upload.php';
+  }
   function statusAuthenticated(){
     session_start();
     if(isset($_SESSION['status'])){
@@ -47,7 +49,7 @@
                   <h4 class="modal-title">Create an item</h4>
                 </div>
                 <div class="modal-body">
-                <form action="../model/upload.php" method="post" enctype="multipart/form-data">
+                <form action="../controller.php" method="post" enctype="multipart/form-data">
                   <!-- name -->
                   <div class="row">
                     <div class="col-md-offset-2 col-md-3">
