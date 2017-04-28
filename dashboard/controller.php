@@ -86,7 +86,7 @@
                   </div><hr>
                 </div>
                 <div class="modal-footer">
-                  <button type="btn btn-success" onclick="createItem()">Submit</button>
+                  <input type="submit" class="btn btn-success" name="submit" onclick="createItem()">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </form>
