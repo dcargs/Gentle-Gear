@@ -39,7 +39,7 @@
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
         $name = htmlspecialchars($_POST['name']);
-        $des = htmlspecialchars($_POST['desc']);
+        $des = htmlspecialchars($_POST['des']);
         $alt = htmlspecialchars($_POST['alt']);
         $url = "/statics/images/shop/" . basename($_FILES["fileToUpload"]["name"]);
         q_createItem($name, $des, $url, $alt);
