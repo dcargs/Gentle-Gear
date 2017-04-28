@@ -79,7 +79,7 @@
                       <label id="label4" for="img">Upload Image:</label>
                     </div>
                     <div class="col-md-4">
-                      <input id="name" class="form-control" type="text" name="name" value="">
+                      <input type="file" class="form-control" name="fileToUpload" id="fileToUpload">
                     </div>
                   </div><hr>
                 </div>

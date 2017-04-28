@@ -5,8 +5,6 @@
   $content = adminView();
   $content .= printModal();
 
-  phpinfo();
-
 
 
   $script = '<script src="../statics/dashboardScripts.js"></script>';
