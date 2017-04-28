@@ -3,7 +3,7 @@
   statusAuthenticated();
 
   $content = adminView();
-  $content .+ printModal();
+  $content .= printModal();
   $script = '<script src="../statics/dashboardScripts.js"></script>';
   $header = "Dashboard";
   require "../statics/layout.php";
