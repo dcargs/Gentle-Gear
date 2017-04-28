@@ -9,6 +9,7 @@
   }
 
   function q_createItem($name, $des, $img, $alt){
+    $conn = connectDB();
     $query = "INSERT INTO item (name, description, img_path, img_alt) VALUES (?,?,?,?)";
     $stmt = $conn->stmt_init();
     if(!$stmt->prepare($query)){
@@ -16,8 +17,5 @@
     }
     $stmt->bind_param("ssss", $name, $des, $img, $alt);
     $stmt->execute();
-    $result = $stmt->get_result();
-    return $result;
-
   }
  ?>

@@ -42,6 +42,7 @@
         $des = htmlspecialchars($_POST['desc']);
         $alt = htmlspecialchars($_POST['alt']);
         $url = "/statics/images/shop/" . basename($_FILES["fileToUpload"]["name"]);
+        q_createItem($name, $des, $url, $alt);
         header("Location: ../views/dashboard.php");
     } else {
         echo "Sorry, there was an error uploading your file." . basename($_FILES["fileToUpload"]["name"]);
