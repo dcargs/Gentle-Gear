@@ -1,5 +1,5 @@
 <?php
-  include 'model/upload.php';
+  // include 'model/upload.php';
   function statusAuthenticated(){
     session_start();
     if(isset($_SESSION['status'])){
