@@ -1,4 +1,5 @@
 <?php
+  include 'model/upload.php';
   function statusAuthenticated(){
     session_start();
     if(isset($_SESSION['status'])){
@@ -46,6 +47,7 @@
                   <h4 class="modal-title">Create an item</h4>
                 </div>
                 <div class="modal-body">
+                <form action="../model/upload.php" method="post" enctype="multipart/form-data">
                   <!-- name -->
                   <div class="row">
                     <div class="col-md-offset-2 col-md-3">
@@ -87,6 +89,7 @@
                   <button type="btn btn-success" onclick="createItem()">Submit</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
+              </form>
               </div>
 
             </div>

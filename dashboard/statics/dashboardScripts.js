@@ -3,5 +3,10 @@ function modalFill(){
 }
 
 function createItem(){
-  console.log($(".modal-body .row .col-md-4 input").val());
+  if($(".form-control").val() == ''){
+    alert("Fill in all the fields");
+    return false;
+  } else {
+    submit();
+  }
 }
