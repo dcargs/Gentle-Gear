@@ -1,5 +1,5 @@
 <?php
-  $target_dir = "uploads";
+  $target_dir = "../../statics/images/shop";
   $slash="/";
   $target_file = $target_dir .$slash . basename($_FILES["fileToUpload"]["name"]);
   $uploadOk = 1;
