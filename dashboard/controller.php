@@ -17,7 +17,7 @@
                 <div class='col-md-offset-2 col-md-4'>
                   <div class='panel panel-primary'>
                     <div class='panel-heading'>Create an item</div>
-                    <div class='panel-body'>
+                    <div class='panel-body text-center'>
                       <button class='btn btn-info'>Create an item</button>
                     </div>
                   </div>
@@ -25,7 +25,7 @@
                 <div class='col-md-4'>
                   <div class='panel panel-success'>
                     <div class='panel-heading'>Panel Heading</div>
-                    <div class='panel-body'>
+                    <div class='panel-body text-center'>
                       <button class='btn btn-danger'>View Items</button>
                     </div>
                   </div>
