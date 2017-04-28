@@ -1,6 +1,7 @@
 function modalFill(){
-  // $(".pictureModal").attr('src', '../' + src);
-  // $("#description").html(des);
-  // $("#name").html(name);
   $("#myModal").modal();
+}
+
+function createItem(){
+  console.log($(".modal-body > .row > .col-md-4 input").val());
 }

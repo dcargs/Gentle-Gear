@@ -70,7 +70,7 @@
                       <label id="label3" for="alt">Image Alt Text:</label>
                     </div>
                     <div class="col-md-4">
-                      <input id="alt" class="form-control" type="text" name="alt" value="">
+                      <input id="alt" type="text" name="alt" value="">
                     </div>
                   </div><hr>
                   <!-- img_path -->
@@ -79,11 +79,12 @@
                       <label id="label4" for="img">Upload Image:</label>
                     </div>
                     <div class="col-md-4">
-                      <input type="file" class="form-control" name="fileToUpload" id="fileToUpload">
+                      <input type="file" name="fileToUpload" id="fileToUpload">
                     </div>
                   </div><hr>
                 </div>
                 <div class="modal-footer">
+                  <button type="btn btn-success" onclick="createItem()">Submit</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </div>
