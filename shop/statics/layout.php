@@ -15,9 +15,9 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        </ol>
+        </ol> -->
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
