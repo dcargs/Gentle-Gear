@@ -50,7 +50,7 @@
                   <?php
                     if(isset($_SESSION['status'])){
                       $currentPage = $_SERVER['PHP_SELF'];
-                      echo '<li><a class="btn btn-primary" id="text-white" href="../dashboard/dashboard.php">Dashboard</a></li>
+                      echo '<li><a class="btn btn-default" id="" href="../dashboard/dashboard.php">Dashboard</a></li>
                             <li><a class="btn btn-danger" id="text-white" href="../logout.php?page='.$currentPage.'">Logout</a></li>';
                     } else {
                       echo '<li><a class="btn btn-primary" id="text-white" href="../login.php">Login</a></li>';
