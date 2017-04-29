@@ -18,11 +18,7 @@
       <div class="jumbotron">
         <?php if($currentPage != '/Final_Project/login.php'){
           echo'<div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            </ol>
-            <!-- Wrapper for slides -->
+            <!-- Header Picture -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="statics/images/car1.JPG" alt="Gentle Gear" >
