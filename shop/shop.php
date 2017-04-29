@@ -1,6 +1,8 @@
 <?php
   include "shopController.php";
 
+  $content = "";
+  $message = "";
   $modal = printModal();
   $content .= $modal;
   $pictures = buildPictures();
