@@ -45,7 +45,7 @@
         q_createItem($name, $des, $url, $alt);
         header("Location: views/dashboard.php");
     } else {
-        echo "Sorry, there was an error uploading your file." . basename($_FILES["fileToUpload"]["name"]);
+        echo "Sorry, there was an error uploading your file: " . basename($_FILES["fileToUpload"]["name"]);
     }
   }
  ?>
