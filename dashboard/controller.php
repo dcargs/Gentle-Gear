@@ -163,7 +163,8 @@
 
       $userController = new UserController();
       if($userController->checkUser($userToken) == 1){
-        $userController->updatePassword($passToken);
+        echo "user token success";
+        // $userController->updatePassword($passToken);
       } else {
         // mailToWebMaster function here
         echo "Something went wrong";

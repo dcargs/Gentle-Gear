@@ -43,7 +43,6 @@
   }
 
   class UserController {
-
     private $conn;
 
     function __construct() {
@@ -63,5 +62,9 @@
         return $result->num_rows();
       }
     }
+
+    // function updatePassword($passToken){
+    //
+    // }
   }
  ?>
