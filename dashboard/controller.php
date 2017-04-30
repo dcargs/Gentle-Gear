@@ -23,9 +23,8 @@
     $id = htmlspecialchars($_POST['id']);
     $path = htmlspecialchars($_POST['path']);
     // q_deleteItem($id);
-    $path = explode("../..", $path);
-    echo $path[1];
-    unlink( $path[1] );
+    // $path = explode("../..", $path);
+    unlink( $path );
   }
 
   function editItem(){
