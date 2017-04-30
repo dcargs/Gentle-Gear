@@ -3,6 +3,7 @@ $(function(){
 });
 
 function fillModalItem(id, name, des, img, alt){
+  preLoad = $(".modal-body").html();
   $.ajax({
     url: '../controller.php',
     data: {action: 'fillModalItem',
@@ -21,6 +22,9 @@ function fillModalItem(id, name, des, img, alt){
       $("#myModal").modal();
       $("#editBtn").click(function(){
         $(".form-control").removeAttr("readonly");
+      });
+      $("#closeModal").click(function(){
+        $(".modal-body").html(preLoad);
       });
     }
   });
