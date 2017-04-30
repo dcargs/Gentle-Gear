@@ -22,6 +22,14 @@ function fillModalItem(id, name, des, img, alt){
       $("#myModal").modal();
       $("#editBtn").click(function(){
         $(".form-control").removeAttr("readonly");
+        $("#editBtn").html("Save");
+        $("#editBtn").click(function(){
+          $(".form-control").attr("readonly", true);
+          eName = $("#name").val();
+          eDes = $("#des").val();
+          eAlt = $("#alt").val();
+          console.log(eName + eDes + EAlt + id);
+        });
       });
       $("#closeModal").click(function(){
         $(".modal-body").html(preLoad);
