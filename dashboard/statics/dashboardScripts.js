@@ -33,7 +33,7 @@ function fillModalItem(id, name, des, img, alt){
         });
       });
       $("#closeModal").click(function(){
-        $("#editBtn").show().html("Edit").removeClass("btn-success").addClass("btn-primary");
+        $("#editBtn").show().html("Edit").removeClass("btn-success").addClass("btn-primary").unbind("click");
         $(".modal-body").html(preLoad);
       });
     }
