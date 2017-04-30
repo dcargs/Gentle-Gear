@@ -22,10 +22,33 @@
     while($itemArray = $itemsResult->fetch_array()){
       $items[] = $itemArray;
     }
+    echo '<table class="table table-responsive table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Image Path</th>
+                <th>Image Alt</th>
+              </tr>
+            </thead>
+            <tbody>';
     foreach ($items as $item) {
-      print_r($item);
-
+      $id = $item[0];
+      $name = $item[1];
+      $des = $item[2];
+      $img = $item[3];
+      $alt = $item[4];
+      echo "<tr>
+              <td>$id</td>
+              <td>$name</td>
+              <td>$des</td>
+              <td>$img</td>
+              <td>$alt</td>
+            </tr>";
     }
+    echo '</tbody></table>';
+
   }
 
   function statusAuthenticated(){
