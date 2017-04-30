@@ -1,5 +1,5 @@
 <?php
-  require "../controller.php";
+  require_once "../controller.php";
   statusAuthenticated();
 
   $content = adminView();
@@ -7,5 +7,5 @@
   $message = "";
   $script = '<script src="../statics/dashboardScripts.js"></script>';
   $header = "Dashboard";
-  require "../statics/layout.php";
+  require_once "../statics/layout.php";
  ?>
