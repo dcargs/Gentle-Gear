@@ -6,14 +6,18 @@
   if(isset($_POST['action']) && !empty($_POST['action'])){
     $action = $_POST['action'];
     switch ($action) {
-      case 'printItemsTable':
-        printItemsTable();
-        break;
+      case 'printItemsTable': printItemsTable(); break;
+      case 'fillModalItem': fillModalItem(); break;
 
       default:
         $message = "<h2 class='text-center'>$action not specified in controller</h2>";
         break;
     }
+  }
+
+  function fillModalItem(){
+    $img = $_POST['img'];
+    echo "<img class='img-responsive' src='../..$img'>";
   }
 
   function printItemsTable(){
@@ -109,6 +113,7 @@
                     </div>
                     <div class="col-md-4">
                       <input id="name" class="form-control" type="text" name="name" value="">
+                      <input type="hidden" name="id" />
                     </div>
                   </div><hr>
                   <!-- description -->
@@ -126,7 +131,7 @@
                       <label id="label3" for="alt">Image Alt Text:</label>
                     </div>
                     <div class="col-md-4">
-                      <input id="alt" type="text" name="alt" value="">
+                      <input id="alt" class="form-control" type="text" name="alt" value="">
                     </div>
                   </div><hr>
                   <!-- img_path -->
@@ -134,13 +139,14 @@
                     <div class="col-md-offset-2 col-md-3">
                       <label id="label4" for="img">Upload Image:</label>
                     </div>
-                    <div class="col-md-4">
+                    <div id="img_path" class="col-md-4">
                       <input type="file" name="fileToUpload" id="fileToUpload">
                     </div>
                   </div><hr>
                 </div>
                 <div class="modal-footer">
                   <input type="submit" class="btn btn-success" name="submit" onclick="createItem()">
+                  <button type="button" id="editBtn" class="btn btn-danger">Edit</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </form>
