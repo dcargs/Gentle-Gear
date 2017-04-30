@@ -154,12 +154,13 @@
 
   function resetPass(){
     if(isset($_POST['formObject'])){
-      $formObject = $_POST['formObject'];
-      echo $formObject;
-      // echo "<br />" . $_POST['user']; *** THESE DIDN'T WORK ***
-      // echo "<br />" . $_POST['pass'];
+      $form_object = $_POST['formObject'];
+      $login_card = explode('&', $form_object);
+      $userToken = explode('=', $login_card[0]);
+      $passToken = explode('=', $login_card[1]);
+      echo $userToken[0].": ".$userToken[1]." || ".$passToken[0].": ".$passToken[1];
     } else {
-      echo "formObject not set";
+      echo "form serlization failed";
     }
   }
 
