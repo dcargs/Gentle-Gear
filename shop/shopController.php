@@ -20,9 +20,9 @@
       $url = '"'.$row[3].'"';
       $alt = '"'.$row[4].'"';
       $pictures .= "<div class='picture col-md-3 block'>
-                      <img onclick='modalFill($url, $des, $name)' class='img-responsive'  alt='$row[4]'>
+                      <img onclick='modalFill($url, $des, $name)' class='img-responsive' src='../$row[3]' alt='$row[4]'>
                     </div>";
-    }//src='../$row[3]'
+    }
     $pictures .= "</div>
               </div>";
     return $pictures;

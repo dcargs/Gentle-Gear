@@ -18,8 +18,8 @@
         <!-- Header Picture -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img  alt="Gentle Gear" >
-          </div><!-- src="../statics/images/car1.JPG" -->
+            <img src="../statics/images/car1.JPG" alt="Gentle Gear" >
+          </div>
         </div>
 
         <div id="menu">
