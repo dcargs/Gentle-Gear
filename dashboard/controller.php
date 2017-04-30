@@ -4,7 +4,7 @@
   }
 
   if(isset($_POST['action']) && !empty($_POST['action'])){
-    include 'model/dashboardDAL.php';
+
     $action = $_POST['action'];
     switch ($action) {
       case 'printItemsTable': printItemsTable(); break;
@@ -19,6 +19,7 @@
   }
 
   function deleteItem(){
+    include 'model/dashboardDAL.php';
     $id = htmlspecialchars($_POST['id']);
     $path = htmlspecialchars($_POST['path']);
     // q_deleteItem($id);
@@ -26,6 +27,7 @@
   }
 
   function editItem(){
+    include 'model/dashboardDAL.php';
     $id = htmlspecialchars($_POST['id']);
     $name = htmlspecialchars($_POST['name']);
     $des = htmlspecialchars($_POST['des']);
