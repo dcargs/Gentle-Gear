@@ -25,6 +25,7 @@
     // q_deleteItem($id);
     $path = explode("../..", $path);
     echo $path[1];
+    unlink( $path[1] );
   }
 
   function editItem(){
