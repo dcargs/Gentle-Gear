@@ -153,7 +153,6 @@
   }
 
   function adminFooter(){
-    session_start();
     $user = '"' . $_SESSION['user'] . '"';
     $layout = "<div class='col-md-offset-5 col-md-1'>
                 <button type='button' class='btn btn-warning' onclick='resetPass($user)'>Reset Password</button>
