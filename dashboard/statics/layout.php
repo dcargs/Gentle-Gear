@@ -51,6 +51,7 @@
         </div><hr>
         <?= $content ?>
         <?= $message ?>
+        <br><hr>
         <div class="row">
           <?= $footer ?>
         </div>
