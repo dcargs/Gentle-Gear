@@ -5,7 +5,7 @@ $(function(){
 function printItemsTable(){
   $.ajax({
     url: 'controller.php',
-    data: {},
+    data: {action: 'printItemsTable'},
     type: 'post',
     success: function(output){
       $("#itemTable").html(output).slideToggle();
