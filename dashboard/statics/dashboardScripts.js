@@ -17,6 +17,7 @@ function fillModalItem(id, name, des, img, alt){
       $("#alt").val(alt);
       $(".form-control").attr("readonly", true);
       $("#editBtn").show();
+      $("#createBtn").hide();
       $("#myModal").modal();
       $("#editBtn").click(function(){
         $(".form-control").removeAttr("readonly");
@@ -37,6 +38,7 @@ function printItemsTable(){
 }
 
 function modalFillCreateItem(){
+  $("#createBtn").show();
   $("#myModal").modal();
 }
 

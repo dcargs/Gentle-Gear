@@ -145,7 +145,7 @@
                   </div><hr>
                 </div>
                 <div class="modal-footer">
-                  <input type="submit" class="btn btn-success" name="submit" onclick="createItem()">
+                  <input type="submit" id="createBtn" class="btn btn-success" name="submit" onclick="createItem()">
                   <button type="button" id="editBtn" class="btn btn-danger">Edit</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>

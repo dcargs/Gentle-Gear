@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="../../statics/styles.css">
     <meta charset="utf-8">
     <title>Gentle Gear</title>
+    <style>
+      .modal-body{
+        max-height: inherit;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
