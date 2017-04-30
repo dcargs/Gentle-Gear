@@ -22,7 +22,7 @@
     while($itemArray = $itemsResult->fetch_array()){
       $items[] = $itemArray;
     }
-    echo '<table class="table table-responsive table-bordered">
+    echo '<table class="table table-responsive table-bordered table-striped">
             <thead>
               <tr>
                 <th>ID</th>
