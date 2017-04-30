@@ -129,7 +129,7 @@
                   <h4 class="modal-title">Create an item</h4>
                 </div>
                 <div class="modal-body">
-                <form action="../controller.php" method="post" enctype="multipart/form-data">
+                <form id="createItemForm" action="../controller.php" method="post" enctype="multipart/form-data">
                   <!-- name -->
                   <div class="row">
                     <div class="col-md-offset-2 col-md-3">

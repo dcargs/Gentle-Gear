@@ -92,6 +92,6 @@ function createItem(){
     alert("Fill in all the fields");
     return false;
   } else {
-    submit();
+    $("#createItemForm").submit();
   }
 }
