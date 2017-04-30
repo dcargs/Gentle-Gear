@@ -42,7 +42,14 @@ function fillModalItem(id, name, des, img, alt){
             success: function(output){
               $("#editBtn, #deleteBtn").hide();
               $(".modal-body").html(output);
-              printItemsTable();
+              $.ajax({
+                url: '../controller.php',
+                data: {action: 'printItemsTable'},
+                type: 'post',
+                success: function(output){
+                  $("#itemTable").html(output);
+                }
+              });
             }
           });
         });
