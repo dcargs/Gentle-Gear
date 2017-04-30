@@ -21,24 +21,43 @@ function fillModalItem(id, name, des, img, alt){
       $("#createBtn").hide();
       $("#myModal").modal();
       $("#editBtn").click(function(){
+        $("#deleteBtn").hide();
         $(".form-control").removeAttr("readonly");
         $("#editBtn").html("Save").removeClass("btn-primary").addClass("btn-success");
         $("#editBtn").click(function(){
+          $("#deleteBtn").show();
           $("#editBtn").hide();
           $(".form-control").attr("readonly", true);
           eName = $("#name").val();
           eDes = $("#des").val();
           eAlt = $("#alt").val();
-          console.log(eName + eDes + eAlt + id);
+          $.ajax({
+            url: '../controller.php',
+            data: {action: 'editItem',
+                   id: id,
+                   name: eName,
+                   des: eDes,
+                   alt: eAlt},
+            type: 'post',
+            success: function(output){
+              $("#editBtn, #deleteBtn").hide();
+              $(".modal-body").html(output);
+            }
+          });
         });
       });
+
+      $("#deleteBtn").click(function(){
+        console.log("delete ajax here");
+      });
+
       $("#closeModal").click(function(){
         $("#editBtn").show().html("Edit").removeClass("btn-success").addClass("btn-primary").unbind("click");
         $(".modal-body").html(preLoad);
       });
     }
   });
-}
+}//end item details model
 
 function printItemsTable(){
   $.ajax({

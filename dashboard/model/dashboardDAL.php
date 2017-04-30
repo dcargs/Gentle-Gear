@@ -18,4 +18,16 @@
     $stmt->bind_param("ssss", $name, $des, $img, $alt);
     $stmt->execute();
   }
+
+  // will eventually have to put img_path in once gallery implemented
+  function q_editItem($id, $name, $des, $alt){
+    $conn = connectDB();
+    $query = "UPDATE item SET name = ?, description = ?, img_alt = ? WHERE id = ?";
+    $stmt = $conn->stmt_init();
+    if(!$stmt->prepare($query)){
+      exit();
+    }
+    $stmt->bind_param("ssss", $name, $des, $alt, $id);
+    $stmt->execute();
+  }
  ?>

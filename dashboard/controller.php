@@ -8,11 +8,22 @@
     switch ($action) {
       case 'printItemsTable': printItemsTable(); break;
       case 'fillModalItem': fillModalItem(); break;
+      case 'editItem': editItem(); break;
 
       default:
         $message = "<h2 class='text-center'>$action not specified in controller</h2>";
         break;
     }
+  }
+
+  function editItem(){
+    include 'model/dashboardDAL.php';
+    $id = htmlspecialchars($_POST['id']);
+    $name = htmlspecialchars($_POST['name']);
+    $des = htmlspecialchars($_POST['des']);
+    $alt = htmlspecialchars($_POST['alt']);
+    q_editItem($id, $name, $des, $alt);
+    echo "<h2 class='text-center'>Item Successfully Updated</h2>";
   }
 
   function fillModalItem(){
