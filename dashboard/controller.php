@@ -22,7 +22,7 @@
 
   function resetPassForm(){
     session_start();
-    $user = $_SESSION['user'];
+    $user = '"' . $_SESSION['user'] . '"';
     echo "<form id='resetPassForm'>
             <!-- user -->
             <div class='row'>
@@ -39,7 +39,7 @@
                 <label id='label2' for='pass'>New Password:</label>
               </div>
               <div class='col-md-4'>
-                <input id='pass' class='form-control' type='password' name='pass' value="">
+                <input id='pass' class='form-control' type='password' name='pass'>
               </div>
             </div>
           </form>";
