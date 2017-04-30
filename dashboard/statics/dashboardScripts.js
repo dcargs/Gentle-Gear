@@ -22,8 +22,9 @@ function fillModalItem(id, name, des, img, alt){
       $("#myModal").modal();
       $("#editBtn").click(function(){
         $(".form-control").removeAttr("readonly");
-        $("#editBtn").html("Save");
+        $("#editBtn").html("Save").removeClass("btn-primary").addClass("btn-success");
         $("#editBtn").click(function(){
+          $("#editBtn").hide();
           $(".form-control").attr("readonly", true);
           eName = $("#name").val();
           eDes = $("#des").val();
@@ -32,6 +33,7 @@ function fillModalItem(id, name, des, img, alt){
         });
       });
       $("#closeModal").click(function(){
+        $("#editBtn").show().html("Edit").removeClass("btn-success").addClass("btn-primary");
         $(".modal-body").html(preLoad);
       });
     }
