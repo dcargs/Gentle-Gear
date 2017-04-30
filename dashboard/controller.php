@@ -20,38 +20,6 @@
     }
   }
 
-  function resetPassForm(){
-    $user = '"' . $_SESSION['user'] . '"';
-    echo "<form id='resetPassForm'>
-            <!-- user -->
-            <div class='row'>
-              <div class='col-md-offset-2 col-md-3'>
-                <label id='label1' for='user'>User:</label>
-              </div>
-              <div class='col-md-4'>
-                <input id='user' class='form-control' type='text' name='user' value=$user>
-              </div>
-            </div><hr>
-            <!-- password -->
-            <div class='row'>
-              <div class='col-md-offset-2 col-md-3'>
-                <label id='label2' for='pass'>New Password:</label>
-              </div>
-              <div class='col-md-4'>
-                <input id='pass' class='form-control' type='password' name='pass'>
-              </div>
-            </div>
-          </form>";
-  }
-
-  function resetPass(){
-    if(isset($_POST['formObject'])){
-      print_r($_POST['formObject']);
-    } else {
-      echo "formObject not set";
-    }
-  }
-
   function deleteItem(){
     include 'model/dashboardDAL.php';
     $id = htmlspecialchars($_POST['id']);
@@ -158,6 +126,38 @@
                 <button type='button' class='btn btn-warning' onclick='resetPass($user)'>Reset Password</button>
               </div>";
     return $layout;
+  }
+
+  function resetPassForm(){
+    $user = htmlspecialchars($_POST['user']);
+    echo "<form id='resetPassForm'>
+            <!-- user -->
+            <div class='row'>
+              <div class='col-md-offset-2 col-md-3'>
+                <label id='label1' for='user'>User:</label>
+              </div>
+              <div class='col-md-4'>
+                <input id='user' class='form-control' type='text' name='user' value='$user'>
+              </div>
+            </div><hr>
+            <!-- password -->
+            <div class='row'>
+              <div class='col-md-offset-2 col-md-3'>
+                <label id='label2' for='pass'>New Password:</label>
+              </div>
+              <div class='col-md-4'>
+                <input id='pass' class='form-control' type='password' name='pass'>
+              </div>
+            </div>
+          </form>";
+  }
+
+  function resetPass(){
+    if(isset($_POST['formObject'])){
+      print_r($_POST['formObject']);
+    } else {
+      echo "formObject not set";
+    }
   }
 
   function printModal(){
