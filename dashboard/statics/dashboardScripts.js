@@ -2,6 +2,46 @@ $(function(){
   $("#itemTable, #editBtn, #deleteBtn").hide();
 });
 
+// this function talks to the userController in root
+function resetPass(user){
+  preLoad = $(".modal-body").html();
+  $.ajax({
+    url: '../controller.php',
+    data: {action: 'resetPassForm',
+           user: user,},
+    type: 'post',
+    success: function(output){
+      $(".modal-title").html("Reset Your Password");
+      $(".modal-body").html(output);
+      $("#user").attr("disabled", true);
+      $("#createBtn, #deleteBtn").hide();
+      $("#editBtn").html("Save").show();
+      $("#myModal").modal();
+
+      $("#editBtn").click(function(){
+        $("#user").removeAttr("disabled");
+        if($(".form-control").val() == ''){
+          alert("Fill in your password value");
+        } else {
+          $.ajax({
+            url: '../controller.php',
+            data: {action: 'resetPass',
+                   formObject: $("form#resetPassForm").serialize()},
+            type: 'post',
+            success: function(output){
+              console.log(output);
+            }
+          });
+        }
+      });
+
+      $("#closeModal").click(function(){
+
+      });
+    }
+  });
+}
+
 function fillModalItem(id, name, des, img, alt){
   preLoad = $(".modal-body").html();
   $.ajax({

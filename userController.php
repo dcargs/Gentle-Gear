@@ -11,11 +11,12 @@
 
   function login(){
     session_start();
-    $_SESSION['status'] = "authenticated";
     $user = htmlspecialchars($_POST['user']);
     $pass = htmlspecialchars($_POST['pass']);
     $result = q_login($user, $pass);
     echo $result;
+    $_SESSION['status'] = "authenticated";
+    $_SESSION['user'] = $user;
   }
 
   $loginForm = '<div class="form-group">

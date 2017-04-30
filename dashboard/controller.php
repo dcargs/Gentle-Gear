@@ -11,10 +11,44 @@
       case 'fillModalItem': fillModalItem(); break;
       case 'editItem': editItem(); break;
       case 'deleteItem': deleteItem(); break;
+      case 'resetPassForm': resetPassForm(); break;
+      case 'resetPass': resetPass(); break;
 
       default:
         $message = "<h2 class='text-center'>$action not specified in controller</h2>";
         break;
+    }
+  }
+
+  function resetPassForm(){
+    session_start();
+    echo "<form id='resetPassForm'>
+            <!-- user -->
+            <div class='row'>
+              <div class='col-md-offset-2 col-md-3'>
+                <label id='label1' for='user'>User:</label>
+              </div>
+              <div class='col-md-4'>
+                <input id='user' class='form-control' type='text' name='user' value='$_SESSION['user']'>
+              </div>
+            </div><hr>
+            <!-- password -->
+            <div class='row'>
+              <div class='col-md-offset-2 col-md-3'>
+                <label id='label2' for='pass'>New Password:</label>
+              </div>
+              <div class='col-md-4'>
+                <input id='pass' class='form-control' type='password' name='pass' value="">
+              </div>
+            </div>
+          </form>";
+  }
+
+  function resetPass(){
+    if(isset($_POST['formObject'])){
+      print_r($_POST['formObject']);
+    } else {
+      echo "formObject not set";
     }
   }
 
@@ -116,6 +150,15 @@
 
               </div>";
       return $layout;
+  }
+
+  function adminFooter(){
+    session_start();
+    $user = $_SESSION['user'];
+    $layout = "<div class='col-md-offset-5 col-md-1'>
+                <button type='button' class='btn btn-warning' onclick='resetPass($user)'>Reset Password</button>
+              </div>";
+    return $layout;
   }
 
   function printModal(){
