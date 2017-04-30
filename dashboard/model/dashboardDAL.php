@@ -38,8 +38,7 @@
     if(!$stmt->prepare($query)){
       exit();
     }
-    $stmt->bind_param("s", $id);
+    $stmt->bind_param("i", $id);
     $stmt->execute();
-
   }
  ?>

@@ -22,7 +22,7 @@
     include 'model/dashboardDAL.php';
     $id = htmlspecialchars($_POST['id']);
     $path = htmlspecialchars($_POST['path']);
-    // q_deleteItem($id);
+    q_deleteItem($id);
     $path = explode("../..", $path);
     unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
   }
