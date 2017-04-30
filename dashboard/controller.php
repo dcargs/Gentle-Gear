@@ -19,12 +19,14 @@
   }
 
   function deleteItem(){
-    include 'model/dashboardDAL.php';
-    $id = htmlspecialchars($_POST['id']);
-    $path = htmlspecialchars($_POST['path']);
-    q_deleteItem($id);
-    $path = explode("../..", $path);
-    unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
+    // include 'model/dashboardDAL.php';
+    // $id = htmlspecialchars($_POST['id']);
+    // $path = htmlspecialchars($_POST['path']);
+    // q_deleteItem($id);
+    // $path = explode("../..", $path);
+    // unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
+    unlink("Final_Project/statics/images/shop/20170407_101619.jpg");
+
   }
 
   function editItem(){
