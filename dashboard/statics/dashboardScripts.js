@@ -28,7 +28,7 @@ function fillModalItem(id, name, des, img, alt){
           eName = $("#name").val();
           eDes = $("#des").val();
           eAlt = $("#alt").val();
-          console.log(eName + eDes + EAlt + id);
+          console.log(eName + eDes + eAlt + id);
         });
       });
       $("#closeModal").click(function(){
