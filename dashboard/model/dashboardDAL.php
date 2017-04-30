@@ -59,7 +59,7 @@
         $stmt->bind_param("s", $userToken[1]);
         $stmt->execute();
         $result = $stmt->get_result();
-        return $result->num_rows();
+        return $result->num_rows;
       }
     }
 
