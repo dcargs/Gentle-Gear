@@ -43,7 +43,7 @@
               <td>$id</td>
               <td>$name</td>
               <td>$des</td>
-              <td class='text-center'><img class='imageCell img-responsive' src='../..$img' alt='$alt'></td>
+              <td><img class='center-block imageCell img-responsive' src='../..$img' alt='$alt'></td>
               <td>$alt</td>
             </tr>";
     }
