@@ -41,4 +41,27 @@
     $stmt->bind_param("i", $id);
     $stmt->execute();
   }
+
+  class UserController {
+
+    private $conn;
+
+    function __construct() {
+      require_once("../../secure/database.php");
+      $this->conn = new mysqli(HOST, USERNAME, PASSWORD, DBNAME);
+      if ($this->conn->connect_error) {
+          die("Connection failed: " . $this->conn->connect_error);
+      }
+   }
+
+    function getUsers(){
+      $stmt = $this->conn->stmt_init();
+      if($stmt->prepare("SELECT id FROM user")){
+        $stmt->execute();
+        $result = $stmt->get_result();
+        // $result = $result->fetch_array();
+        return $result;
+      }
+    }
+  }
  ?>
