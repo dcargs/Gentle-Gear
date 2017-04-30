@@ -29,14 +29,18 @@ function resetPass(user){
                    formObject: $("form#resetPassForm").serialize()},
             type: 'post',
             success: function(output){
-              console.log(output);
+              if(output == 1){
+                window.location.href = "../../logout.php";
+              } else {
+                alert(output);
+              }
             }
           });
         }
       });
 
       $("#closeModal").click(function(){
-
+        $(".modal-body").html(preLoad);
       });
     }
   });

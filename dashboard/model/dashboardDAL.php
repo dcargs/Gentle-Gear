@@ -59,12 +59,20 @@
         $stmt->bind_param("s", $userToken[1]);
         $stmt->execute();
         $result = $stmt->get_result();
+        $stmt->close();
         return $result->num_rows;
       }
     }
 
-    // function updatePassword($passToken){
-    //
-    // }
+    function updatePassword($passToken){
+      $hash = password_hash($passToken[1], PASSWORD_DEFAULT);
+      $stmt = $this->conn->stmt_init();
+      if($stmt->prepare("UPDATE user SET password = ?")){
+        $stmt->bind_param("s", $hash);
+        $stmt->execute();
+        $stmt->close();
+      }
+
+    }
   }
  ?>
