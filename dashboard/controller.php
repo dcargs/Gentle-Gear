@@ -24,7 +24,7 @@
     $path = htmlspecialchars($_POST['path']);
     // q_deleteItem($id);
     $path = explode("../..", $path);
-    unlink( $_SERVER['DOCUMENT_ROOT'] ."$path" );
+    unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
   }
 
   function editItem(){
