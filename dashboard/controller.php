@@ -25,6 +25,7 @@
     q_deleteItem($id);
     $path = explode("../..", $path);
     unlink("..$path[1]");
+    $path = explode("shop/", $path);
     echo "<h2 class='text-center'>Item successfully deleted</h2><hr>
           <h3 class='text-center'>$path[1] successfully deleted</h3>";
   }
