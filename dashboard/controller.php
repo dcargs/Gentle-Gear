@@ -19,16 +19,14 @@
   }
 
   function deleteItem(){
-    // include 'model/dashboardDAL.php';
-    // $id = htmlspecialchars($_POST['id']);
+    include 'model/dashboardDAL.php';
+    $id = htmlspecialchars($_POST['id']);
     $path = htmlspecialchars($_POST['path']);
-    // q_deleteItem($id);
+    q_deleteItem($id);
     $path = explode("../..", $path);
-    echo "the path variable after explode is $path[1]<br />";
-    // unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
-    // below worked
-    // unlink('../statics/images/shop/20170407_101619.jpg');
-
+    unlink("..$path[1]");
+    echo "<h2 class='text-center'>Item successfully deleted</h2><hr>
+          <h3 class='text-center'>$path[0] successfully deleted</h3>";
   }
 
   function editItem(){
