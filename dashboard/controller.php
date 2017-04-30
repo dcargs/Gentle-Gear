@@ -22,7 +22,7 @@
 
   function resetPassForm(){
     session_start();
-    $user = "'" . $_SESSION['user'] . "'";
+    $user = '"' . $_SESSION['user'] . '"';
     echo "<form id='resetPassForm'>
             <!-- user -->
             <div class='row'>
