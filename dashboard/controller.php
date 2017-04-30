@@ -25,27 +25,27 @@
     echo '<table class="table table-responsive table-bordered table-striped">
             <thead>
               <tr>
-                <th>ID</th>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Image Path</th>
                 <th>Image Alt</th>
+                <th>Edit</th>
               </tr>
             </thead>
             <tbody>';
     foreach ($items as $item) {
-      $id = $item[0];
-      $name = $item[1];
-      $des = $item[2];
-      $img = $item[3];
-      $alt = $item[4];
+      $id = "'".$item[0]."'";
+      $name = "'".$item[1]."'";
+      $des = "'".$item[2]."'";
+      $img = "'".$item[3]."'";
+      $alt = "'".$item[4]."'";
       echo "<tr>
-              <td>$id</td>
               <td>$name</td>
               <td>$des</td>
-              <td><img class='center-block imageCell img-responsive' src='../..$img' alt='$alt'></td>
-              <td>$alt</td>
-            </tr>";
+              <td><img class='center-block imageCell img-responsive' src='../..$item[3]' alt='$item[4]'></td>
+              <td>$alt</td>";
+      echo   '<td><button class="btn btn-primary" onclick="fillModalItem('.$id.','.$name.','.$des.','.$img.','.$alt.')">Edit</button></td>
+            </tr>';
     }
     echo '</tbody></table>';
 
