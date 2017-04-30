@@ -21,11 +21,13 @@
   function deleteItem(){
     // include 'model/dashboardDAL.php';
     // $id = htmlspecialchars($_POST['id']);
-    // $path = htmlspecialchars($_POST['path']);
+    $path = htmlspecialchars($_POST['path']);
     // q_deleteItem($id);
-    // $path = explode("../..", $path);
+    $path = explode("../..", $path);
+    echo "the path variable after explode is $path[1]<br />";
     // unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
-    unlink('../statics/images/shop/20170407_101619.jpg');
+    // below worked
+    // unlink('../statics/images/shop/20170407_101619.jpg');
 
   }
 
