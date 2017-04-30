@@ -17,12 +17,14 @@
   }
 
   function printItemsTable(){
+    include("../shop/model/shopDAL.php");
     $itemsResult = q_getItems();
     while($itemArray = $itemsResult->fetch_array()){
       $items[] = $itemArray;
     }
     foreach ($items as $item) {
       print_r($item);
+
     }
   }
 
