@@ -77,7 +77,7 @@ function printItemsTable(){
     data: {action: 'printItemsTable'},
     type: 'post',
     success: function(output){
-      $("#itemTable").html(output).slideToggle();
+      $("#itemTable").html(output);
     }
   });
 }
