@@ -1,4 +1,19 @@
-function modalFill(){
+$(function(){
+  $("#itemTable").hide();
+});
+
+function printItemsTable(){
+  $.ajax({
+    url: 'controller.php',
+    data: {},
+    type: 'post',
+    success: function(output){
+      $("#itemTable").html(output).slideToggle();
+    }
+  });
+}
+
+function modalFillCreateItem(){
   $("#myModal").modal();
 }
 

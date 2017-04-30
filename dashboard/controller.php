@@ -2,6 +2,30 @@
   if(isset($_POST['submit'])){
     require 'model/upload.php';
   }
+
+  if(isset($_POST['action']) && !empty($_POST['action'])){
+    $action = $_POST['action'];
+    switch ($action) {
+      case 'printItemsTable':
+        printItemsTable();
+        break;
+
+      default:
+        $message = "<h2 class='text-center'>$action not specified in controller</h2>";
+        break;
+    }
+  }
+
+  function printItemsTable(){
+    $itemsResult = q_getItems();
+    while($itemArray = $itemsResult->fetch_array()){
+      $items[] = $itemArray;
+    }
+    foreach ($items as $item) {
+      print_r($item);
+    }
+  }
+
   function statusAuthenticated(){
     session_start();
     if(isset($_SESSION['status'])){
@@ -21,18 +45,21 @@
                   <div class='panel panel-primary'>
                     <div class='panel-heading'>Create an item</div>
                     <div class='panel-body text-center'>
-                      <button class='btn btn-info' onclick='modalFill()'>Create an item</button>
+                      <button class='btn btn-info' onclick='modalFillCreateItem()'>Create an item</button>
                     </div>
                   </div>
                 </div>
                 <div class='col-md-4'>
                   <div class='panel panel-success'>
-                    <div class='panel-heading'>Panel Heading</div>
+                    <div class='panel-heading'>View Your Items</div>
                     <div class='panel-body text-center'>
-                      <button class='btn btn-danger' onclick='modalFill()'>View Items</button>
+                      <button class='btn btn-danger' onclick='printItemsTable()'>View Items</button>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class='row' id='itemTable'>
+
               </div>";
       return $layout;
   }
