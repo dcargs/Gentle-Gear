@@ -1,5 +1,5 @@
 $(function(){
-  $("#itemTable, #editBtn").hide();
+  $("#itemTable, #editBtn, #deleteBtn").hide();
 });
 
 function fillModalItem(id, name, des, img, alt){
@@ -17,7 +17,7 @@ function fillModalItem(id, name, des, img, alt){
       $("#des").val(des);
       $("#alt").val(alt);
       $(".form-control").attr("readonly", true);
-      $("#editBtn").show();
+      $("#editBtn, #deleteBtn").show();
       $("#createBtn").hide();
       $("#myModal").modal();
       $("#editBtn").click(function(){
@@ -42,6 +42,7 @@ function printItemsTable(){
 }
 
 function modalFillCreateItem(){
+  $("#editBtn, #deleteBtn").hide();
   $("#createBtn").show();
   $("#myModal").modal();
 }

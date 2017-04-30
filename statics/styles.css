@@ -38,6 +38,10 @@
   padding: 15px;
 }
 
+.floatLeft{
+  float: left;
+}
+
 .imageCell{
   max-height: 150px;
 }

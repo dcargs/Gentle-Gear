@@ -146,7 +146,8 @@
                 </div>
                 <div class="modal-footer">
                   <input type="submit" id="createBtn" class="btn btn-success" name="submit" onclick="createItem()">
-                  <button type="button" id="editBtn" class="btn btn-danger">Edit</button>
+                  <button type="button" id="deleteBtn" class="btn btn-danger floatLeft">Delete</button>
+                  <button type="button" id="editBtn" class="btn btn-primary">Edit</button>
                   <button type="button" id="closeModal" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </form>
