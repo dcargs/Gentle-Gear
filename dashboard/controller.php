@@ -160,9 +160,14 @@
       $login_card = explode('&', $form_object);
       $userToken = explode('=', $login_card[0]);
       $passToken = explode('=', $login_card[1]);
-      // echo $userToken[0].": ".$userToken[1]." || ".$passToken[0].": ".$passToken[1];
+
       $userController = new UserController();
-      print_r($userController->getUsers());
+      if($userController->checkUser($userToken) == 1){
+        $userController->updatePassword($passToken);
+      } else {
+        // mailToWebMaster function here
+        echo "Something went wrong";
+      }
     } else {
       echo "form serlization failed";
     }

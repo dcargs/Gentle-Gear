@@ -54,13 +54,13 @@
       }
    }
 
-    function getUsers(){
+    function checkUser($userToken){
       $stmt = $this->conn->stmt_init();
-      if($stmt->prepare("SELECT id FROM user")){
+      if($stmt->prepare("SELECT id FROM user WHERE id=?")){
+        $stmt->bind_param("s", $userToken[1]);
         $stmt->execute();
         $result = $stmt->get_result();
-        // $result = $result->fetch_array();
-        return $result;
+        return $result->num_rows();
       }
     }
   }
