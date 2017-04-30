@@ -39,5 +39,6 @@
 }
 
 .imageCell{
+  align-items: center;
   max-height: 150px;
 }
