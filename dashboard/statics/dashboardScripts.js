@@ -4,7 +4,7 @@ $(function(){
 
 function printItemsTable(){
   $.ajax({
-    url: 'controller.php',
+    url: '../controller.php',
     data: {action: 'printItemsTable'},
     type: 'post',
     success: function(output){
