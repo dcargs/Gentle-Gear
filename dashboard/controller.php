@@ -25,7 +25,7 @@
     // q_deleteItem($id);
     // $path = explode("../..", $path);
     // unlink( $_SERVER['DOCUMENT_ROOT'] ."$path[1]" );
-    unlink("Final_Project/statics/images/shop/20170407_101619.jpg");
+    unlink('../statics/images/shop/20170407_101619.jpg');
 
   }
 
