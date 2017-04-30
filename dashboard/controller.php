@@ -155,8 +155,8 @@
   function resetPass(){
     if(isset($_POST['formObject'])){
       print_r($_POST['formObject']);
-      echo "<br />$_POST['user']";
-      echo "<br />$_POST['pass']";
+      echo "<br />" . $_POST['user'];
+      echo "<br />" . $_POST['pass'];
     } else {
       echo "formObject not set";
     }
