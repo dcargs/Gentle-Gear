@@ -30,4 +30,16 @@
     $stmt->bind_param("ssss", $name, $des, $alt, $id);
     $stmt->execute();
   }
+
+  function q_deleteItem($id){
+    $conn = connectDB();
+    $query = "DELETE FROM item WHERE id = ?";
+    $stmt = $conn->stmt_init();
+    if(!$stmt->prepare($query)){
+      exit();
+    }
+    $stmt->bind_param("s", $id);
+    $stmt->execute();
+
+  }
  ?>

@@ -4,11 +4,13 @@
   }
 
   if(isset($_POST['action']) && !empty($_POST['action'])){
+    include 'model/dashboardDAL.php';
     $action = $_POST['action'];
     switch ($action) {
       case 'printItemsTable': printItemsTable(); break;
       case 'fillModalItem': fillModalItem(); break;
       case 'editItem': editItem(); break;
+      case 'deleteItem': deleteItem(); break;
 
       default:
         $message = "<h2 class='text-center'>$action not specified in controller</h2>";
@@ -16,8 +18,14 @@
     }
   }
 
+  function deleteItem(){
+    $id = htmlspecialchars($_POST['id']);
+    $path = htmlspecialchars($_POST['path']);
+    // q_deleteItem($id);
+    echo "<h2 class='text-center'>Item Deleted</h2>";
+  }
+
   function editItem(){
-    include 'model/dashboardDAL.php';
     $id = htmlspecialchars($_POST['id']);
     $name = htmlspecialchars($_POST['name']);
     $des = htmlspecialchars($_POST['des']);
@@ -28,7 +36,7 @@
 
   function fillModalItem(){
     $img = $_POST['img'];
-    echo "<img class='img-responsive' src='../..$img'>";
+    echo "<img class='img-responsive infoPic' src='../..$img'>";
   }
 
   function printItemsTable(){

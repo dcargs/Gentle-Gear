@@ -48,7 +48,18 @@ function fillModalItem(id, name, des, img, alt){
       });
 
       $("#deleteBtn").click(function(){
-        console.log("delete ajax here");
+        path = $(".infoPic").attr("src")
+        $.ajax({
+          url: '../controller.php',
+          data: {action: 'deleteItem',
+                 id: id,
+                 path: path},
+          type: 'post',
+          success: function(output){
+            $("#editBtn, #deleteBtn").hide();
+            $(".modal-body").html(output);
+          }
+        });
       });
 
       $("#closeModal").click(function(){
