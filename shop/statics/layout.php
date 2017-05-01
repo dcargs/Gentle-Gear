@@ -16,11 +16,11 @@
     <div class="container">
       <div class="jumbotron">
         <!-- Header Picture -->
-        <div class="carousel-inner" role="listbox">
+        <!-- <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img src="../statics/images/car1.JPG" alt="Gentle Gear" >
           </div>
-        </div>
+        </div> -->
 
         <div id="menu">
           <nav role="navigation" class="navbar navbar-default">
