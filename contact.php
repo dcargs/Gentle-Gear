@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $content = "<br><div class='container'>
+  $content = "<br><div id='contactForm' class='container'>
                 <div class='form-group'>
                   <label>First Name:</label>
                   <input type='text' class='form-control' placeholder='First Name'>
@@ -17,6 +17,7 @@
                   <label>First Name:</label>
                   <textarea class='form-control' placeholder='Message'></textarea>
                 </div>
+                <button type='button' onclick='contactFormSubmission()' class='btn btn-primary center-block'>Submit</button>
               </div>";
   $message = "";
   $script = '<script src="statics/scripts.js"></script>';
