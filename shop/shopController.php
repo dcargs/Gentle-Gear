@@ -19,7 +19,7 @@
       $des = '"'.$row[2].'"';
       $url = '"'.$row[3].'"';
       $alt = '"'.$row[4].'"';
-      $pictures .= "<div class='picture col-md-3 block'>
+      $pictures .= "<div class='picture col-md-3'>
                       <div class='thumbnail' onclick='modalFill($url, $des, $name)'>
                         <img class='img-responsive' src='../$row[3]' alt='$row[4]'>
                         <div class='caption'>
