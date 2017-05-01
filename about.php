@@ -13,11 +13,11 @@
                   </div>
                   <div class='row'>
                     <div class='col-md-offset-1 col-md-10'>
-                      <img src='statics/images/about/Jonah_Riding_large.png' class='img-responsive img-rounded' alt='Anita Riding'>
+                      <img src='statics/images/about/Jonah_Riding_large.png' class='img-responsive img-rounded' alt='Anita Riding'><br>
                     </div>
                   </div>
                 <div class='row'>
-                  <div class='col-md-offset-1 col-md-10'>
+                  <div class='col-md-offset-1 col-md-10 text-center'>
                     <p>
                       Staying safe on your bike is of paramount importance, which is why each child participates in a rider safety course and receives a helmet when they receive their bicycle.
                     </p>
@@ -27,8 +27,8 @@
                   </div>
                 </div>
                 <div class='row'>
-                  <div class='col-md-offset-1 col-md-10'>
-                    <img src='statics/images/about/Anita_Riding_large.png' class='img-responsive img-rounded' alt='Anita Riding'>
+                  <div class='col-md-offset-1 col-md-10 text-center'>
+                    <img src='statics/images/about/Anita_Riding_large.png' class='img-responsive img-rounded' alt='Anita Riding'><br>
                   </div>
                 </div>
               </div>
