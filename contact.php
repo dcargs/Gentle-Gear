@@ -1,5 +1,6 @@
 <?php
   session_start();
+  $script = '<script src="statics/scripts.js"></script>';
   $content = "<br><div id='contactForm' class='container'>
                 <div class='form-group'>
                   <label>First Name:</label>
@@ -20,7 +21,6 @@
                 <button type='button' onclick='contactFormSubmission()' class='btn btn-primary center-block'>Submit</button>
               </div>";
   $message = "";
-  $script = '<script src="statics/scripts.js"></script>';
   $header = "Contact";
   require "statics/layout.php";
 ?>
