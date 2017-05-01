@@ -15,7 +15,7 @@ function login_submission(){
         if(output == 0){
           window.location.href = 'dashboard/views/dashboard.php';
         } else {
-          console.log(output);
+          $("#message").html(output);
         }
       }
     });

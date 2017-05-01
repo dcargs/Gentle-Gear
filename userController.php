@@ -14,7 +14,11 @@
     $user = htmlspecialchars($_POST['user']);
     $pass = htmlspecialchars($_POST['pass']);
     $result = q_login($user, $pass);
-    echo $result;
+    if($result == 0){
+      echo '0';
+    } else {
+      echo "<h3 class='text-center'>Incorrect credentials</h3>";
+    }
     $_SESSION['status'] = "authenticated";
     $_SESSION['user'] = $user;
   }

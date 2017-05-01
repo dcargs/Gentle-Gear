@@ -2,7 +2,7 @@
   ob_start();
   require "userController.php";
 
-  $message = "";
+  $message = "<div id='message' class='row'></div>";
   $script = '<script src="statics/scripts.js"></script>
              <script src="statics/userScripts.js"></script>';
   $header = "Login";

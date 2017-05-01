@@ -40,6 +40,7 @@ function resetPass(user){
       });
 
       $("#closeModal").click(function(){
+        $("#editBtn").unbind("click");
         $(".modal-body").html(preLoad);
       });
     }
