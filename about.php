@@ -37,7 +37,7 @@
                   <p>
                     We are currently partnered with after school academic support programs to distribute bicycles to underprivileged children. If you would like more information about Gentle Gear, or to see if your program qualifies to partner with Gentle Gear, please send us an e-mail through our contact page.
                   </p>
-                  <p>
+                  <p class='text-center'>
                     Happy Riding!
                   </p>
                 </div>
