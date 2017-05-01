@@ -1,5 +1,5 @@
 <?php
-
+  session_start();
   $message = "";
   $content = "";
   $script = '<script src="statics/scripts.js"></script>';
