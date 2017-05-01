@@ -1,6 +1,4 @@
 <?php
-  ob_start();
-  session_start();
   if(isset($_POST['action']) && !empty($_POST['action'])){
     include "model/userDAL.php";
     $action = $_POST['action'];
