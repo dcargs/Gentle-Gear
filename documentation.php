@@ -12,7 +12,7 @@
     <div class="container">
       <div class="jumbotron">
         <div class="row">
-          <button type="button" class="btn btn-primary" onclick="window.location.href='../'">Back</button>
+          <button type="button" class="btn btn-primary center-block" onclick="window.location.href='../'">Back</button>
         </div>
         <div class="row">
           <div class="col-md-offset-2 col-md-8">
