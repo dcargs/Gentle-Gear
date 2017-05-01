@@ -6,6 +6,10 @@
   color: inherit;
 }
 
+#text-white:active {
+  color: inherit;
+}
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
