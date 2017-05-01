@@ -1,4 +1,7 @@
 <?php
+  if(isset($_SESSION['status'])){
+    header("Location: dashboard/views/dashboard.php");
+  }
   if(isset($_POST['action']) && !empty($_POST['action'])){
     include "model/userDAL.php";
     $action = $_POST['action'];
@@ -15,12 +18,12 @@
     $pass = htmlspecialchars($_POST['pass']);
     $result = q_login($user, $pass);
     if($result == 0){
+      $_SESSION['status'] = "authenticated";
+      $_SESSION['user'] = $user;
       echo '0';
     } else {
       echo " Incorrect credentials";
     }
-    $_SESSION['status'] = "authenticated";
-    $_SESSION['user'] = $user;
   }
 
   $loginForm = '<div class="container">
