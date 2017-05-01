@@ -23,7 +23,7 @@
     $_SESSION['user'] = $user;
   }
 
-  $loginForm = '<div class="row">
+  $loginForm = '<div class="container">
                   <div class="form-group">
                     <label for="label1">User:</label>
                     <input type="text" class="form-control" id="user" name="user" placeholder="User">
