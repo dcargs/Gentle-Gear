@@ -10,15 +10,15 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron text-center">
+      <div class="jumbotron">
         <div class="row">
-          <div class="col-md-offset-1 col-md-10">
+          <div class="col-md-offset-2 col-md-8">
             <h2 class='text-center'>Final Project Documentation</h2>
           </div><hr>
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>1.</label>
           </div>
           <div class="col-md-8">
@@ -27,7 +27,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>2.</label>
           </div>
           <div class="col-md-8">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>3.</label>
           </div>
           <div class="col-md-8">
@@ -45,7 +45,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>4.</label>
           </div>
           <div class="col-md-8">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>5.</label>
           </div>
           <div class="col-md-8">
@@ -63,7 +63,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>6.</label>
           </div>
           <div class="col-md-8">
@@ -72,7 +72,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>7.</label>
           </div>
           <div class="col-md-8">
@@ -81,7 +81,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>8.</label>
           </div>
           <div class="col-md-8">
@@ -90,7 +90,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>9.</label>
           </div>
           <div class="col-md-8">
@@ -99,7 +99,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>10.</label>
           </div>
           <div class="col-md-8">
@@ -108,7 +108,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>11.</label>
           </div>
           <div class="col-md-8">
@@ -117,7 +117,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>12.</label>
           </div>
           <div class="col-md-8">
@@ -126,7 +126,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>13.</label>
           </div>
           <div class="col-md-8">
@@ -135,7 +135,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>14.</label>
           </div>
           <div class="col-md-8">
@@ -144,7 +144,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>15.</label>
           </div>
           <div class="col-md-8">
@@ -153,7 +153,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>16.</label>
           </div>
           <div class="col-md-8">
@@ -162,7 +162,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>17.</label>
           </div>
           <div class="col-md-8">
@@ -171,7 +171,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>18.</label>
           </div>
           <div class="col-md-8">
@@ -180,7 +180,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-2 col-md-2">
             <label>19.</label>
           </div>
           <div class="col-md-8">
