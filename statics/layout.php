@@ -1,5 +1,5 @@
-<?php /*ob_start();
-      session_start();*/
+<?php ob_start();
+      session_start();
       $currentPage = $_SERVER['PHP_SELF'];?>
 <!DOCTYPE html>
 <html>
@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <?php if($currentPage != '/Final_Project/login.php'){
+        <?php if($currentPage == '/Final_Project/login.phpREMOVEME'){
           echo'<div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Header Picture -->
             <div class="carousel-inner" role="listbox">
