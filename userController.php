@@ -12,7 +12,6 @@
   }
 
   function login(){
-    session_start();
     $user = htmlspecialchars($_POST['user']);
     $pass = htmlspecialchars($_POST['pass']);
     $result = q_login($user, $pass);
