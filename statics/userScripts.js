@@ -1,3 +1,7 @@
+$(function(){
+  $("#message").hide();
+});
+
 function login_submission(){
   if($(".form-control").val() == ''){
     alert("You must fill out all of the fields to proceed");
@@ -15,7 +19,7 @@ function login_submission(){
         if(output == 0){
           window.location.href = 'dashboard/views/dashboard.php';
         } else {
-          $("#message").html(output);
+          $("#message").html(output).slideDown('slow');
         }
       }
     });
