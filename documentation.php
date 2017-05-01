@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron text-center">
         <div class="row">
           <div class="col-md-offset-1 col-md-10">
             <h2 class='text-center'>Final Project Documentation</h2>
