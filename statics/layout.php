@@ -54,7 +54,7 @@
                       echo '<li><a href="dashboard/views/dashboard.php">Dashboard</a></li>
                             <li><a class="btn btn-danger" id="text-white" href="logout.php?page='.$currentPage.'">Logout</a></li>';
                     } else {
-                      echo '<li><a class="btn btn-primary" id="text-white" href="login.php">Login</a></li>';
+                      echo '<li><a class="btn btn-success" id="text-white" href="login.php">Login</a></li>';
                     }?>
                 </ul>
             </div>
