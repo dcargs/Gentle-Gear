@@ -2,7 +2,7 @@
   ob_start();
   require "userController.php";
 
-  $message = "<div class='row'>
+  $message = "<div id='messageRow' class='row'>
                 <div class='panel panel-danger'>
                   <div id='message' class='panel-body'></div>
                 </div>

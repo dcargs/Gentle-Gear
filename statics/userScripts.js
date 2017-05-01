@@ -1,5 +1,5 @@
 $(function(){
-  $("#message").hide();
+  $("#messageRow").hide();
 });
 
 function login_submission(){
@@ -19,7 +19,8 @@ function login_submission(){
         if(output == 0){
           window.location.href = 'dashboard/views/dashboard.php';
         } else {
-          $("#message").html(output).slideDown('slow');
+          $("#message").html(output);
+          $("#messageRow").slideDown('slow');
         }
       }
     });
