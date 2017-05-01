@@ -3,8 +3,8 @@
   require "userController.php";
 
   $message = "<div id='messageRow' class='row'>
-                <div class='panel panel-danger'>
-                  <div id='message' class='panel-body'></div>
+                <div class='alert alert-danger'>
+                  <strong>Error!</strong><span id='message'></span>
                 </div>
               </div>";
   $script = '<script src="statics/scripts.js"></script>
