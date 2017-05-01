@@ -3,7 +3,7 @@
   session_start();
 
   if(isset($_SESSION['status'])){
-    // header("Location: dashboard/views/dashboard.php");
+    header("Location: dashboard/views/dashboard.php");
   } else {
     require "userController.php";
     $message = "<br><div id='messageRow' class='row'>
