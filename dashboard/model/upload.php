@@ -1,6 +1,5 @@
 <?php
   include "dashboardDAL.php";
-  include "../controller.php";
   statusAuthenticated();
   $target_dir = "../statics/images/shop/";
   $target_file = $target_dir  . basename($_FILES["fileToUpload"]["name"]);
