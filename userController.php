@@ -17,7 +17,7 @@
     if($result == 0){
       echo '0';
     } else {
-      echo "<h3 class='text-center'>Incorrect credentials</h3>";
+      echo "Incorrect credentials";
     }
     $_SESSION['status'] = "authenticated";
     $_SESSION['user'] = $user;
