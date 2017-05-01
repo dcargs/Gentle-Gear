@@ -17,21 +17,25 @@
     if($result == 0){
       echo '0';
     } else {
-      echo "Incorrect credentials";
+      echo " Incorrect credentials";
     }
     $_SESSION['status'] = "authenticated";
     $_SESSION['user'] = $user;
   }
 
-  $loginForm = '<div class="form-group">
-                  <label for="label1">User:</label>
-                  <input type="text" class="form-control" id="user" name="user" placeholder="User">
-                </div>
-                <div class="form-group">
-                  <label for="label2">Password:</label>
-                  <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                </div>
-                <div class="text-center">
-                    <input class="btn btn-primary btn-md" type="submit" value="Login" name="submit" role="button" onclick="return login_submission()">
+  $loginForm = '<div class="row">
+                  <div class="form-group">
+                    <label for="label1">User:</label>
+                    <input type="text" class="form-control" id="user" name="user" placeholder="User">
+                  </div>
+                  <div class="form-group">
+                    <label for="label2">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                  </div>
+                  <div class="text-center">
+                      <input class="btn btn-primary btn-md" type="submit" value="Login" name="submit" role="button" onclick="return login_submission()">
+                  </div>
                 </div>';
+
+  $signupForm = '';
  ?>

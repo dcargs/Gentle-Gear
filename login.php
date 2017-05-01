@@ -11,5 +11,6 @@
              <script src="statics/userScripts.js"></script>';
   $header = "Login";
   $content = $loginForm;
+  $content .= $signupForm;
   require "statics/layout.php";
 ?>
