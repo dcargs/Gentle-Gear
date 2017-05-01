@@ -1,5 +1,5 @@
-<?php ob_start();
-      session_start();
+<?php /*ob_start();
+      session_start();*/
       $currentPage = $_SERVER['PHP_SELF'];?>
 <!DOCTYPE html>
 <html>
