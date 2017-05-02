@@ -221,7 +221,7 @@
                       <label id="label4" for="img">Upload Image:</label>
                     </div>
                     <div id="img_path" class="col-md-4">
-                      <input type="file" name="fileToUpload" id="fileToUpload">
+                      <input type="file" name="filesToUpload[]" id="fileToUpload">
                     </div>
                   </div><hr>
                 </div>
