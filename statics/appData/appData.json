@@ -11,9 +11,9 @@
     {
       "id": 1,
       "title": "success",
-      "content": "<div class='alert alert-success'>
-                    <strong>Success_Label!</strong><span>success_message</span>
-                  </div>"
+      "content-front": "<div class='alert alert-success'><strong>",
+      "content-middle": "</strong><span>",
+      "content-back": "</span></div>"
     }
   ]
 }
