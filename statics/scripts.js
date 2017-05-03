@@ -11,7 +11,7 @@ function contactFormSubmission(){
     alert("Fill out entire form");
   } else {
     $.get( "statics/appData/appData.json", 'json', function(data){
-        console.log(data.posts.title);
+        console.log(data.posts['content']);
 
     });
   }
