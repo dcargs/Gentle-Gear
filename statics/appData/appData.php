@@ -19,7 +19,8 @@
     private $obj;
 
     function __contruct(){
-      $json = json_decode(file_get_contents('appData.json'), true);
+      $file = file_get_contents('appData.json', true);
+      $json = json_decode(stripslashes($file));
       $json = str_replace('&quot', '"', $json);
       $this->obj = $json;
       $x = json_last_error();
@@ -27,7 +28,8 @@
     }
 
     function submit_success(){
-      // var_dump($this->obj);
+      var_dump($this->obj);
+      print_r($this->obj);
       // $title = $this->obj->appData['posts'][0]['title'];
       // $message = $this->obj->appData['posts'][0]['content'];
       // $boxFront = $this->obj->appData['message_box'][0]['content-front'];
