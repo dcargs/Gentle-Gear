@@ -1,36 +1,46 @@
 <?php
-  if(isset($_GET['action'])){
-    $action = htmlspecialchars($_GET['action']);
-    switch ($action) {
-      case 'contact_submit':
-        // $appData = json_decode(file_get_contents('appData.json'), true);
-        // print_r($appData);
-        $json = new jsonController();
-        // $json->anything();
-        $json->submit_success();
-        // echo $result;
-      break;
+  $id = empty($_GET['content']) ? 0 : $_GET['content'];
+  $appData = json_decode(file_get_contents('appData.json'));
 
-      default: break;
-    }
+  header('Content-Type: application/json');
+  if ($id == 0) {
+    print json_encode($appData);
   }
-
-  class jsonController{
-    private $obj;
-
-    function __contruct(){
-      $file = file_get_contents('appData.json', true);
-      print_r($file);
-      $json = json_decode(stripslashes($file));
-      $json = str_replace('&quot', '"', $json);
-      $this->obj = $json;
-      $x = json_last_error();
-      echo $x;
-    }
-
-    function submit_success(){
-      var_dump($this->obj);
-      print_r($this->obj);
+  else {
+    print json_encode($appData->posts[$id-1]);
+  }
+  // if(isset($_GET['action'])){
+  //   $action = htmlspecialchars($_GET['action']);
+  //   switch ($action) {
+  //     case 'contact_submit':
+  //       // $appData = json_decode(file_get_contents('appData.json'), true);
+  //       // print_r($appData);
+  //       $json = new jsonController();
+  //       // $json->anything();
+  //       $json->submit_success();
+  //       // echo $result;
+  //     break;
+  //
+  //     default: break;
+  //   }
+  // }
+  //
+  // class jsonController{
+  //   private $obj;
+  //
+  //   function __contruct(){
+  //     $file = file_get_contents('appData.json', true);
+  //     print_r($file);
+  //     $json = json_decode(stripslashes($file));
+  //     $json = str_replace('&quot', '"', $json);
+  //     $this->obj = $json;
+  //     $x = json_last_error();
+  //     // echo $x;
+  //   }
+  //
+    // function submit_success(){
+    //   var_dump($this->obj);
+    //   print_r($this->obj);
       // $title = $this->obj->appData['posts'][0]['title'];
       // $message = $this->obj->appData['posts'][0]['content'];
       // $boxFront = $this->obj->appData['message_box'][0]['content-front'];
@@ -39,8 +49,8 @@
       //
       // $displayItem = $boxFront . $title . $boxMiddle . $message . $boxBack;
       // return $displayItem;
-    }
-  }
+  //   }
+  // }
 
   // function data_posts($type){
   //   switch ($type) {
