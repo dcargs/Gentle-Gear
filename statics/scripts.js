@@ -12,8 +12,7 @@ function contactFormSubmission(){
   } else {
     $.get( "statics/appData/appData.php", {content: 'success_submit'}, function(output){
         console.log(output);
-        obj = $.parseJSON(output);
-        console.log(obj.posts);
+        console.log(output.posts);
     });
     // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
   }
