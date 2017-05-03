@@ -16,8 +16,8 @@
     private $appData;
 
     function __contruct(){
-      $this->appData = json_decode(file_get_contents('appData.json'), true);
-      print_r($this->appData);
+      $appData = json_decode(file_get_contents('appData.json'), true);
+      print_r($appData);
     }
 
     function submit_success(){
