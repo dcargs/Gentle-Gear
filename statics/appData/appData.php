@@ -19,7 +19,7 @@
       $this->appData = json_decode(file_get_contents('appData.json'), true);
     }
 
-    function submit_success(){
+    public function submit_success(){
       $title = $this->appData['posts'][0]['title'];
       $message = $this->appData['posts'][0]['content'];
       $boxFront = $this->appData['message_box'][0]['content-front'];
