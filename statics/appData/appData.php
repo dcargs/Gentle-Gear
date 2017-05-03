@@ -30,7 +30,7 @@
       $boxBack = $this->appData['message_box'][0]['content-back'];
 
       $displayItem = $boxFront . $title . $boxMiddle . $message . $boxBack;
-      return $displayItem;
+      return '4';
     }
 
     function anything(){
