@@ -12,7 +12,12 @@ function contactFormSubmission(){
   } else {
     $.get( "statics/appData/appData.json", 'json', function(data){
         var title = data.posts[0]['title'];
-        console.log(title);
+        var content = data.posts[0]['content'];
+        var boxFront = data.message_box[0]['content-front'];
+        var boxMiddle = data.message_box[0]['content-middle'];
+        var boxEnd = data.message_box[0]['content-end'];
+
+        console.log(boxFront + title + boxMiddle + content + boxEnd);
         // console.log(data.posts[0]['content']);
 
     });
