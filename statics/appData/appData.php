@@ -4,8 +4,8 @@
     switch ($action) {
       case 'contact_submit':
         $json = new jsonController();
-        $result = $json->submit_success();
-        echo $result;
+        // $result = $json->submit_success();
+        // echo $result;
       break;
 
       default: break;
@@ -17,9 +17,10 @@
 
     function __contruct(){
       $this->appData = json_decode(file_get_contents('appData.json'), true);
+      print_r($this->appData);
     }
 
-    public function submit_success(){
+    function submit_success(){
       $title = $this->appData['posts'][0]['title'];
       $message = $this->appData['posts'][0]['content'];
       $boxFront = $this->appData['message_box'][0]['content-front'];
