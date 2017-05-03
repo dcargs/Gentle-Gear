@@ -11,7 +11,7 @@ function contactFormSubmission(){
     alert("Fill out entire form");
   } else {
     $.get( "statics/appData/appData.php", {action: 'contact_submit'}, function(output){
-        console.log(output);
+        $("#message").html(output);
     });
     // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
   }

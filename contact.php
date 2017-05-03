@@ -20,7 +20,7 @@
                 </div>
                 <button type='button' onclick='contactFormSubmission()' class='btn btn-primary center-block'>Submit</button>
               </div>";
-  $message = "";
+  $message = "<div id='message'></div>";
   $header = "Contact";
   require "statics/layout.php";
 ?>
