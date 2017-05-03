@@ -11,14 +11,8 @@ function contactFormSubmission(){
     alert("Fill out entire form");
   } else {
     $.get( "statics/appData/appData.json", 'json', function(data){
-        // console.log(output);
-        // output.forEach($.each(this, function(data){
-        //   console.log(data);
-        // }));
-        console.log(data.posts);
-
+        console.log(data.posts.title);
 
     });
-    // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
   }
 }
