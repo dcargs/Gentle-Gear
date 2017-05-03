@@ -16,7 +16,7 @@
   }
 
   class jsonController{
-    private $appData;
+    public $appData;
 
     function __contruct($input){
       $this->$appData = $input;
