@@ -19,7 +19,9 @@
     private $obj;
 
     function __contruct(){
-      $this->obj = json_decode(str_replace('&quot', '"', file_get_contents('appData.json'), true));
+      $json = json_decode(file_get_contents('appData.json'), true);
+      $json = str_replace('&quot', '"', $json);
+      $this->obj = $json;
       $x = json_last_error();
       echo $x;
     }
