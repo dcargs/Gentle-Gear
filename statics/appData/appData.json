@@ -2,8 +2,13 @@
   "posts": [
     {
       "id": 1,
-      "title": "success",
+      "title": "Success!",
       "content": "Your form has been successfully submitted. We will be in contact with you within the next 24 hours."
+    },
+    {
+      "id": 2,
+      "title": "Error!",
+      "content": "You must fill in the entire form."
     }
   ],
 
@@ -12,6 +17,13 @@
       "id": 1,
       "title": "success",
       "content-front": "<div class='alert alert-success'><strong>",
+      "content-middle": "</strong><span>",
+      "content-back": "</span></div>"
+    },
+    {
+      "id": 2,
+      "title": "error",
+      "content-front": "<div class='alert alert-danger'><strong>",
       "content-middle": "</strong><span>",
       "content-back": "</span></div>"
     }
