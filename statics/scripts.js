@@ -10,6 +10,9 @@ function contactFormSubmission(){
   if($(".form-control").val() == ''){
     alert("Fill out entire form");
   } else {
-    $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
+    $.get( "statics/appData/appData.php", {content: 'success_submit'}, function(output){
+        console.log(output);
+    });
+    // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
   }
 }
