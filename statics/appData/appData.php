@@ -8,7 +8,7 @@
         $json = new jsonController();
         // $json->anything();
         $json->submit_success();
-        echo $result;
+        // echo $result;
       break;
 
       default: break;
@@ -23,7 +23,7 @@
     }
 
     function submit_success(){
-      print_r($this->obj->appData)
+      print_r($this->obj->appData);
       // $title = $this->obj->appData['posts'][0]['title'];
       // $message = $this->obj->appData['posts'][0]['content'];
       // $boxFront = $this->obj->appData['message_box'][0]['content-front'];
