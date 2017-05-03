@@ -25,9 +25,8 @@
       $boxMiddle = $this->appData['message_box'][0]['content-middle'];
       $boxBack = $this->appData['message_box'][0]['content-back'];
 
-      $displayItem = $boxFront.$title.' '.$boxMiddle.$message.$boxBack;
+      $displayItem = "".$boxFront.$title." ".$boxMiddle.$message.$boxBack;
       echo $displayItem;
-      echo "in jsonController";
     }
   }
 
