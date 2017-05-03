@@ -19,7 +19,7 @@
     private $obj;
 
     function __contruct(){
-      $this->obj = json_decode(file_get_contents('appData.json'), true
+      $this->obj = json_decode(file_get_contents('appData.json'), true);
       $x = json_last_error();
       echo $x;
     }
