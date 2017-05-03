@@ -28,7 +28,7 @@ function contactFormSubmission(){
         var display = boxFront + title + " " + boxMiddle + content + boxEnd;
 
         $("#message").fadeIn().html(display);
-        $(".form-control").attr("readonly", true);
+        $(".form-control").attr("disabled", true);
     });
   }
 }
