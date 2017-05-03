@@ -35,7 +35,7 @@
 
     function anything(){
       echo "anything";
-      echo $this->appData;
+      print_r($this->appData);
     }
   }
 
