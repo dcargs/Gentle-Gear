@@ -23,7 +23,7 @@
     }
 
     function submit_success(){
-    var_dump($this->obj->appData);
+      var_dump($this->obj);
       // $title = $this->obj->appData['posts'][0]['title'];
       // $message = $this->obj->appData['posts'][0]['content'];
       // $boxFront = $this->obj->appData['message_box'][0]['content-front'];
