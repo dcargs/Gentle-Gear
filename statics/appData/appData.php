@@ -3,7 +3,7 @@
   if(isset($_GET['content'])){
     $appData = json_decode(file_get_contents('appData.json'));
     print_r($appData->posts);
-    echo $appData->posts.id;
+    echo $appData['posts'][0]['content'];
   } else {
     echo "not set";
   }
