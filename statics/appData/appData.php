@@ -12,4 +12,5 @@
     $appData = json_decode(file_get_contents('appData.json'), true);
     $x = $appData['posts'][0]['content'];
     echo $x;
+  }
  ?>
