@@ -15,15 +15,15 @@
     private $appData;
 
     function __contruct(){
-      $appData = json_decode(file_get_contents('appData.json'), true);
+      $this->appData = json_decode(file_get_contents('appData.json'), true);
     }
 
     function submit_success(){
-      $title = $appData['posts'][0]['title'];
-      $message = $appData['posts'][0]['content'];
-      $boxFront = $appData['message_box'][0]['content-front'];
-      $boxMiddle = $appData['message_box'][0]['content-middle'];
-      $boxBack = $appData['message_box'][0]['content-back'];
+      $title = $this->appData['posts'][0]['title'];
+      $message = $this->appData['posts'][0]['content'];
+      $boxFront = $this->appData['message_box'][0]['content-front'];
+      $boxMiddle = $this->appData['message_box'][0]['content-middle'];
+      $boxBack = $this->appData['message_box'][0]['content-back'];
 
       $displayItem = $boxFront.$title.' '.$boxMiddle.$message.$boxBack;
       return $displayItem;
