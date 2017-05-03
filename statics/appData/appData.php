@@ -20,7 +20,8 @@
 
     function __contruct(){
       $this->obj = json_decode(file_get_contents('appData.json'), true
-      echo json_last_error();
+      $x = json_last_error();
+      echo $x;
     }
 
     function submit_success(){
