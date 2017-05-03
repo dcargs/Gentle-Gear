@@ -4,7 +4,8 @@
     switch ($action) {
       case 'contact_submit':
         $json = new jsonController();
-        echo $json->submit_success();
+        $result = $json->submit_success();
+        echo $result;
       break;
 
       default: break;
