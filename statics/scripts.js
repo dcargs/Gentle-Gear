@@ -10,7 +10,7 @@ function contactFormSubmission(){
   if($(".form-control").val() == ''){
     alert("Fill out entire form");
   } else {
-    $.get( "statics/appData/appData.json", json, function(output){
+    $.get( "statics/appData/appData.json", 'json', function(output){
         console.log(output);
         var obj = $.parseJSON(output);
         console.log(obj);
