@@ -5,6 +5,7 @@
       case 'contact_submit':
         $appData = json_decode(file_get_contents('appData.json'), true);
         $json = new jsonController($appData);
+        $json->anything();
         // $result = $json->submit_success();
         // echo $result;
       break;
@@ -31,6 +32,11 @@
 
       $displayItem = "$boxFront $title  $boxMiddle $message $boxBack";
       return $title;
+    }
+
+    function anything(){
+      echo "anything";
+      echo $this->appData;
     }
   }
 
