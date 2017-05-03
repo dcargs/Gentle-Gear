@@ -19,7 +19,7 @@
     private $obj;
 
     function __contruct(){
-      $this->obj = new jsonObject();
+      $this->obj = json_decode(file_get_contents('appData.json'), true);
     }
 
     function submit_success(){
@@ -32,14 +32,6 @@
       //
       // $displayItem = $boxFront . $title . $boxMiddle . $message . $boxBack;
       // return $displayItem;
-    }
-  }
-
-  class jsonObect{
-    public $appData;
-
-    function __contruct(){
-      $this->appData = json_decode(file_get_contents('appData.json'), true);
     }
   }
 
