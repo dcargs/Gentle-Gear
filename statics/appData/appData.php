@@ -4,6 +4,7 @@
     switch ($action) {
       case 'contact_submit':
         $appData = json_decode(file_get_contents('appData.json'), true);
+        print_r($appData);
         $json = new jsonController($appData);
         $json->anything();
         // $result = $json->submit_success();
@@ -17,8 +18,8 @@
   class jsonController{
     private $appData;
 
-    function __contruct($appData){
-      $this->$appData = $appData;
+    function __contruct($input){
+      $this->$appData = $input;
     }
 
     function submit_success(){
