@@ -1,11 +1,15 @@
 <?php
+  if(isset($_GET['action'])){
+    $action = htmlspecialchars($_GET['action']);
+    switch ($action) {
+      case 'contact_submit': contact_submit(); break;
 
-  if(isset($_GET['content'])){
-    $appData = json_decode(file_get_contents('appData.json'), true);
-    // print_r($appData->posts);
-    $x = $appData['posts'][0]['content'];
-    print_r($x);
-  } else {
-    echo "not set";
+      default: break;
+    }
   }
+
+  function contact_submit(){
+    $appData = json_decode(file_get_contents('appData.json'), true);
+    $x = $appData['posts'][0]['content'];
+    echo $x;
  ?>

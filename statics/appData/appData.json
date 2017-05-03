@@ -1,10 +1,19 @@
 {
-  "appTitle": "Content Navigator",
   "posts": [
     {
       "id": 1,
-      "title": "Contact Form Submission",
-      "content": "Contact Form Received"
+      "title": "Submission Success!",
+      "content": "Your form has been successfully submitted. We will be in contact with you within the next 24 hours."
+    }
+  ],
+
+  "message_box": [
+    {
+      "id": 1,
+      "title": "success",
+      "content": "<div class='alert alert-success'>
+                    <strong>Success_Label!</strong><span>success_message</span>
+                  </div>"
     }
   ]
 }
