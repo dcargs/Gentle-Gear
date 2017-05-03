@@ -11,7 +11,7 @@ function contactFormSubmission(){
     alert("Fill out entire form");
   } else {
     $.get( "statics/appData/appData.json", 'json', function(output){
-        console.log(output);
+        // console.log(output);
         output.forEach($.each(this, function(){
           console.log(this);
         }))
