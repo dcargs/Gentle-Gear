@@ -10,11 +10,14 @@ function contactFormSubmission(){
   if($(".form-control").val() == ''){
     alert("Fill out entire form");
   } else {
-    $.get( "statics/appData/appData.json", 'json', function(output){
+    $.get( "statics/appData/appData.json", 'json', function(data){
         // console.log(output);
-        output.forEach($.each(this, function(data){
-          console.log(data);
-        }));
+        // output.forEach($.each(this, function(data){
+        //   console.log(data);
+        // }));
+        console.log(data.posts);
+
+
     });
     // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
   }
