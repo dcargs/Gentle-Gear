@@ -14,7 +14,7 @@ function contactFormSubmission(){
         // console.log(output);
         output.forEach($.each(this, function(data){
           console.log(data);
-        }))
+        }));
     });
     // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
   }
