@@ -11,7 +11,7 @@
   function contact_submit(){
     $appData = json_decode(file_get_contents('appData.json'), true);
     $x = $appData['posts'][0]['content'];
-    while($item = array_shift($appData)){
+    while($item = array_shift($appData['posts'])){
       foreach ($item as $key => $value) {
         echo "$value\n";
       }
