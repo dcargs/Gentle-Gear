@@ -19,11 +19,11 @@
     private $obj;
 
     function __contruct(){
-      $this->$obj = new jsonObject();
+      $this->obj = new jsonObject();
     }
 
     function submit_success(){
-      print_r($this->obj->appData);
+      print_r($this->obj);
       // $title = $this->obj->appData['posts'][0]['title'];
       // $message = $this->obj->appData['posts'][0]['content'];
       // $boxFront = $this->obj->appData['message_box'][0]['content-front'];
