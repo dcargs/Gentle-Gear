@@ -3,7 +3,8 @@
     $action = htmlspecialchars($_GET['action']);
     switch ($action) {
       case 'contact_submit':
-        $json = new jsonController();
+        $appData = json_decode(file_get_contents('appData.json'), true);
+        $json = new jsonController($appData);
         // $result = $json->submit_success();
         // echo $result;
       break;
@@ -15,9 +16,10 @@
   class jsonController{
     private $appData;
 
-    function __contruct(){
-      $appData = json_decode(file_get_contents('appData.json'), true);
+    function __contruct($appData){
+      $this->$appData = $appData;
       print_r($appData);
+      print_r($this->appData);
     }
 
     function submit_success(){
