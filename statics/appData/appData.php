@@ -20,6 +20,7 @@
 
     function __contruct(){
       $file = file_get_contents('appData.json', true);
+      print_r($file);
       $json = json_decode(stripslashes($file));
       $json = str_replace('&quot', '"', $json);
       $this->obj = $json;
