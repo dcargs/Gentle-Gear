@@ -4,7 +4,7 @@
     switch ($action) {
       case 'contact_submit':
         $json = new jsonController();
-        $json->submit_success();
+        echo $json->submit_success();
       break;
 
       default: break;
@@ -25,8 +25,8 @@
       $boxMiddle = $this->appData['message_box'][0]['content-middle'];
       $boxBack = $this->appData['message_box'][0]['content-back'];
 
-      $displayItem = "".$boxFront.$title." ".$boxMiddle.$message.$boxBack;
-      echo $displayItem;
+      $displayItem = "$boxFront $title  $boxMiddle $message $boxBack";
+      return $displayItem;
     }
   }
 
