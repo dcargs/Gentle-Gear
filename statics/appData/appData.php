@@ -16,26 +16,29 @@
   }
 
   class jsonController{
-    private $appData;
+    private $obj;
 
     function __contruct(){
-      $this->$appData = json_decode(file_get_contents('appData.json'));
+      $this->$obj = new jsonObject();
     }
 
     function submit_success(){
-      $title = $this->appData['posts'][0]['title'];
-      $message = $this->appData['posts'][0]['content'];
-      $boxFront = $this->appData['message_box'][0]['content-front'];
-      $boxMiddle = $this->appData['message_box'][0]['content-middle'];
-      $boxBack = $this->appData['message_box'][0]['content-back'];
+      $title = $this->obj->appData['posts'][0]['title'];
+      $message = $this->obj->appData['posts'][0]['content'];
+      $boxFront = $this->obj->appData['message_box'][0]['content-front'];
+      $boxMiddle = $this->obj->appData['message_box'][0]['content-middle'];
+      $boxBack = $this->obj->appData['message_box'][0]['content-back'];
 
       $displayItem = $boxFront . $title . $boxMiddle . $message . $boxBack;
-      return '4';
+      return $displayItem;
     }
+  }
 
-    function anything(){
-      echo "anything";
-      print_r($this->appData);
+  class jsonObect{
+    public $appData;
+
+    function __contruct(){
+      $this->$appData = json_decode(file_get_contents('appData.json'), true);
     }
   }
 
