@@ -19,8 +19,6 @@
 
     function __contruct($appData){
       $this->$appData = $appData;
-      print_r($appData);
-      print_r($this->appData);
     }
 
     function submit_success(){
@@ -30,8 +28,8 @@
       $boxMiddle = $this->appData['message_box'][0]['content-middle'];
       $boxBack = $this->appData['message_box'][0]['content-back'];
 
-      $displayItem = "$boxFront $title  $boxMiddle $message $boxBack";
-      return $title;
+      $displayItem = $boxFront . $title . $boxMiddle . $message . $boxBack;
+      return $displayItem;
     }
 
     function anything(){
