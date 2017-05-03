@@ -6,9 +6,9 @@
         // $appData = json_decode(file_get_contents('appData.json'), true);
         // print_r($appData);
         $json = new jsonController();
-        $json->anything();
-        // $result = $json->submit_success();
-        // echo $result;
+        // $json->anything();
+        $result = $json->submit_success();
+        echo $result;
       break;
 
       default: break;
