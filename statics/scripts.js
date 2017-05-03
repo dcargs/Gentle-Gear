@@ -12,8 +12,8 @@ function contactFormSubmission(){
   } else {
     $.get( "statics/appData/appData.json", 'json', function(output){
         // console.log(output);
-        output.forEach($.each(this, function(){
-          console.log(this);
+        output.forEach($.each(this, function(data){
+          console.log(data);
         }))
     });
     // $("#contactForm").html("<h2 class='text-center'>Contact form submission successful<h2>");
