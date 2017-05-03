@@ -27,6 +27,7 @@
 
       $displayItem = $boxFront.$title.' '.$boxMiddle.$message.$boxBack;
       echo $displayItem;
+      echo "in jsonController"
     }
   }
 
