@@ -51,7 +51,11 @@
             <label>3.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Well-Structured and Code Reusability</strong><br>
+              I have fullfilled this requirement through using the layout.php files. If I want to change the navigation bar on the entire website I just have to change one place.
+              The following example brings you back to the same layout.php file as the past 2 requirements<br>
+              <strong>File + Line Num: statics/layout.php from line 1 to 71</strong>
+            </p>
           </div>
         </div>
         <hr>
