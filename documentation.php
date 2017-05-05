@@ -28,7 +28,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>2.</label>
@@ -37,7 +37,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>3.</label>
@@ -46,7 +46,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>4.</label>
@@ -55,7 +55,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>5.</label>
@@ -64,7 +64,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>6.</label>
@@ -73,7 +73,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>7.</label>
@@ -82,7 +82,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>8.</label>
@@ -91,7 +91,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>9.</label>
@@ -100,7 +100,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>10.</label>
@@ -109,7 +109,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>11.</label>
@@ -118,7 +118,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>12.</label>
@@ -127,7 +127,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>13.</label>
@@ -136,7 +136,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>14.</label>
@@ -145,7 +145,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>15.</label>
@@ -154,7 +154,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>16.</label>
@@ -163,7 +163,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>17.</label>
@@ -172,7 +172,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>18.</label>
@@ -181,7 +181,7 @@
             explanation of how I did this
           </div>
         </div>
-
+        <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-2">
             <label>19.</label>
