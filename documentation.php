@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col-md-offset-2 col-md-8">
             <h2 class='text-center'>Final Project Documentation</h2>
-          </div><hr>
+          </div><hr><hr>
         </div>
 
         <div class="row">
@@ -28,7 +28,8 @@
             <p><strong>5 required tags:</strong><br>
             I used the 5 required tags on every page where the user's browser will display information.<br>
             I did this by creating a layout.php file that had the basic structure of the website and I included it on every page.<br>
-            You can find this under /statics/layout.php.<br>*** Note: there are different layouts for the shop and dashboard but they accomplish the same purpose ***</p>
+            You can find this under /statics/layout.php.<br>*** Note: there are different layouts for the shop and dashboard but they accomplish the same purpose ***<br>
+            <strong>File + Line Num: statics/layout.php from line 1 to 71</strong></p>
           </div>
         </div>
         <hr>
@@ -39,6 +40,8 @@
           <div class="col-md-8">
             <p><strong>Consistent Design / Feel</strong><br>
               I have fullfilled this requirement through using the layout.php file on my pages. If you tab through my website the whole thing has very similar components across the whole.
+              The following example is just one of many examples of how I made my website have a consistent design / feel<br>
+              <strong>File + Line Num: index.php on line 13</strong>
             </p>
           </div>
         </div>
