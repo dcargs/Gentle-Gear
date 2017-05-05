@@ -37,5 +37,5 @@
                   </div>
                 </div>';
 
-  $signupForm = '';
+  $signupForm = '';//coming after you guys are done grading because this is going to be a real business website
  ?>

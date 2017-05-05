@@ -39,7 +39,7 @@
           </div>
           <div class="col-md-8">
             <p><strong>Consistent Design / Feel</strong><br>
-              I have fullfilled this requirement through using the layout.php file on my pages. If you tab through my website the whole thing has very similar components across the whole.
+              I have fulfilled this requirement through using the layout.php file on my pages. If you tab through my website the whole thing has very similar components across the whole.
               The following example is just one of many examples of how I made my website have a consistent design / feel<br>
               <strong>File + Line Num: index.php on line 13</strong>
             </p>
@@ -52,7 +52,7 @@
           </div>
           <div class="col-md-8">
             <p><strong>Well-Structured and Code Reusability</strong><br>
-              I have fullfilled this requirement through using the layout.php files. If I want to change the navigation bar on the entire website I just have to change one place.
+              I have fulfilled this requirement through using the layout.php files. If I want to change the navigation bar on the entire website I just have to change one place.
               The following example brings you back to the same layout.php file as the past 2 requirements<br>
               <strong>File + Line Num: statics/layout.php from line 1 to 71</strong>
             </p>
@@ -64,7 +64,17 @@
             <label>4.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>User Authentication</strong><br>
+              I have fulfilled this requirement by allowing a user to login and create a new item to display in the shop.
+              If you login with the user: test and password: pass you will be able to upload a new item for the shop.
+              When you do this it uploads an image file to the server then maps the corresponding link to the image in a MySql table.
+              The shop is written to where it will pull all of the available items to show. Go ahead and try to add one.
+              Just make sure the file is a .jpg and less than 5MB<br>
+              <br>*** Note: When you press login it performs an AJAX call to userController to validate the user then redirect upon success ***<br>
+              <strong>File + Line Num: login.php on line 17 builds the form</strong><br>
+              <strong>File + Line Num: userController.php from line 1 to 41 deals with building the login form and the AJAX call</strong><br>
+              <strong>File + Line Num: userScripts.js from line 5 to 27 sends off the AJAX call to validate user then redirect upon success</strong>
+            </p>
           </div>
         </div>
         <hr>
