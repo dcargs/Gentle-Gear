@@ -37,7 +37,9 @@
             <label>2.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Consistent Design / Feel</strong><br>
+              I have fullfilled this requirement through using the layout.php file on my pages. If you tab through my website the whole thing has very similar components across the whole.
+            </p>
           </div>
         </div>
         <hr>
