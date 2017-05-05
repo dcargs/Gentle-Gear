@@ -25,8 +25,8 @@
             <label>1.</label>
           </div>
           <div class="col-md-8">
-            <strong>5 required tags:</strong><br>
-            <p>I used the 5 required tags on every page where the user's browser will display information.<br>
+            <p><strong>5 required tags:</strong><br>
+            I used the 5 required tags on every page where the user's browser will display information.<br>
             I did this by creating a layout.php file that had the basic structure of the website and I included it on every page.<br>
             You can find this under /statics/layout.php.<br>*** Note: there are different layouts for the shop and dashboard but they accomplish the same purpose ***</p>
           </div>
