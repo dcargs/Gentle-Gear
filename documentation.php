@@ -9,7 +9,7 @@
     <title>Final Project Documentation</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="jumbotron">
         <div class="row">
           <button type="button" class="btn btn-warning center-block" onclick="window.location.href='../'">Go Back</button>
