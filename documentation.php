@@ -181,7 +181,10 @@
             <label>12.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>JavaScript</strong><br>
+              I used JavaScript all over to build the site<br>
+              <strong>File + Line Num: /statics/userScripts.js on line 20 is an example of me using the window.location JavaScript functionality</strong><br>
+            </p>
           </div>
         </div>
         <hr>
@@ -190,7 +193,10 @@
             <label>13.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>jQuery</strong><br>
+              I used jQuery all over to build my site<br>
+              <strong>File + Line Num: /dashboard/statics/dashboardScripts.js from line 1 to 150 is an example of me using jQuery</strong><br>
+            </p>
           </div>
         </div>
         <hr>
@@ -199,7 +205,10 @@
             <label>14.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>jQuery UI or Bootstrap Interface</strong><br>
+              I used Bootstrap to build my entire website. The example I put below get's used in the dashboard when you click on an item to edit<br>
+              <strong>File + Line Num: /dashboard/controller.php from line 177 to 239 is an example of me using Bootstrap's Modal</strong><br>
+            </p>
           </div>
         </div>
         <hr>
@@ -208,7 +217,10 @@
             <label>15.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>AJAX</strong><br>
+              I used AJAX everywhere because posting to another file and forcing the user to redirect is obsolete in web development nowadays<br>
+              <strong>File + Line Num: /dashboard/statics/dashboardScripts.js from line 8 to 47 is an example of me using AJAX to reset a user's password</strong><br>
+            </p>
           </div>
         </div>
         <hr>
@@ -217,34 +229,11 @@
             <label>16.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-offset-2 col-md-2">
-            <label>17.</label>
-          </div>
-          <div class="col-md-8">
-            explanation of how I did this
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-offset-2 col-md-2">
-            <label>18.</label>
-          </div>
-          <div class="col-md-8">
-            explanation of how I did this
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-offset-2 col-md-2">
-            <label>19.</label>
-          </div>
-          <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Not just a Final Project</strong><br>
+              This website is not just a final project. I'm going to go back through once you guys are done grading
+              and make some changes to the backend to get this website ready for production. My good friend Henry Gentle
+              owns the Gentle Gear business.<br>
+            </p>
           </div>
         </div>
 
