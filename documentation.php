@@ -29,7 +29,7 @@
             I used the 5 required tags on every page where the user's browser will display information.<br>
             I did this by creating a layout.php file that had the basic structure of the website and I included it on every page.<br>
             You can find this under /statics/layout.php.<br>*** Note: there are different layouts for the shop and dashboard but they accomplish the same purpose ***<br>
-            <strong>File + Line Num: statics/layout.php from line 1 to 71</strong></p>
+            <strong>File + Line Num: /statics/layout.php from line 1 to 71</strong></p>
           </div>
         </div>
         <hr>
@@ -54,7 +54,7 @@
             <p><strong>Well-Structured and Code Reusability</strong><br>
               I have fulfilled this requirement through using the layout.php files. If I want to change the navigation bar on the entire website I just have to change one place.
               The following example brings you back to the same layout.php file as the past 2 requirements<br>
-              <strong>File + Line Num: statics/layout.php from line 1 to 71</strong>
+              <strong>File + Line Num: /statics/layout.php from line 1 to 71</strong>
             </p>
           </div>
         </div>
@@ -99,8 +99,8 @@
               I have fulfilled this requirment by using PHP in almost everything my website does.
               One specific example is in shop/shop.php. This page builds itself dynamically everything a user loads the page.
               It pulls the images from the statics/images/shop folder and the item information from the item table in my database.<br>
-              <strong>File + Line Num: shop/shop.php on line 8 and 9 puts the pictures on the page</strong><br>
-              <strong>File + Line Num: shop/shopController.php from line 9 to 36 builds the pictures from the database</strong>
+              <strong>File + Line Num: /shop/shop.php on line 8 and 9 puts the pictures on the page</strong><br>
+              <strong>File + Line Num: /shop/shopController.php from line 9 to 36 builds the pictures from the database</strong>
             </p>
           </div>
         </div>
@@ -116,11 +116,10 @@
               The second place I use GET is on the contact page. If you submit this form while it's empty it will send off an AJAX GET request
               for the error message while if you fill it in all the way it sends off an AJAX GET request to get the success message.<br>
               <br>*** Note: The data sent to the GET request in the last example is built from any page that's not the dashboard ***<br>
-              <strong>File + Line Num: statics/userScripts.js from line 5 to 28 is an example of a POST</strong><br>
-              <strong>File + Line Num: dashboard/statics/dashboardScripts.js from line 50 to 124 is another example of a POST</strong><br>
-              <strong>File + Line Num: statics/scripts.js from line 9 to 34 is an example of GET</strong><br>
+              <strong>File + Line Num: /statics/userScripts.js from line 5 to 28 is an example of a POST</strong><br>
+              <strong>File + Line Num: /dashboard/statics/dashboardScripts.js from line 50 to 124 is another example of a POST</strong><br>
+              <strong>File + Line Num: /statics/scripts.js from line 9 to 34 is an example of GET</strong><br>
               <strong>File + Line Num: logout.php from line 11 to 16 is another example of GET</strong><br>
-
             </p>
           </div>
         </div>
@@ -130,7 +129,11 @@
             <label>8.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Must Use Form Elements</strong><br>
+              I have fulfilled this requirment by allowing the user to fill out a form while logged in that allows for image uploads.
+              It's going further than just a login form because I'm using this encryption type to send the data, enctype="multipart/form-data".<br>
+              <strong>File + Line Num: /dashboard/controller.php from line 177 to 240 is an example of advanced form usage</strong><br>
+            </p>
           </div>
         </div>
         <hr>
@@ -139,7 +142,11 @@
             <label>9.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Feedback to Users with Forms</strong><br>
+              I have fulfilled this requirement by when you login if you enter the wrong credentials it gives you feedback as to if you got it right or wrong.
+              If the login is sucessful you get redirected to the dashboard but if it fails you are presented with an error message at the bottom of the screen.<br>
+              <strong>File + Line Num: /statics/userScripts.js from line 5 to 29 is an example of how I give the user feedback</strong><br>
+            </p>
           </div>
         </div>
         <hr>
