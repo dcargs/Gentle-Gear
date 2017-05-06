@@ -83,7 +83,10 @@
             <label>5.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>User Account</strong><br>
+              You can try logging with test and pass.<br>
+              <strong>File + Line Num: login.php on line 17</strong>
+            </p>
           </div>
         </div>
         <hr>
@@ -92,7 +95,13 @@
             <label>6.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Use PHP</strong><br>
+              I have fulfilled this requirment by using PHP in almost everything my website does.
+              One specific example is in shop/shop.php. This page builds itself dynamically everything a user loads the page.
+              It pulls the images from the statics/images/shop folder and the item information from the item table in my database.<br>
+              <strong>File + Line Num: shop/shop.php on line 8 and 9 puts the pictures on the page</strong><br>
+              <strong>File + Line Num: shop/shopController.php from line 9 to 36 builds the pictures from the database</strong>
+            </p>
           </div>
         </div>
         <hr>
@@ -101,7 +110,18 @@
             <label>7.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Use GET and POST</strong><br>
+              I have fulfilled this requirment. I use POST with AJAX on almost every page and I use GET in two places.
+              One of them is if the user hits the logout on any of the pages that aren't the dashboard they will get logged out and then redirected back to their current page.
+              The second place I use GET is on the contact page. If you submit this form while it's empty it will send off an AJAX GET request
+              for the error message while if you fill it in all the way it sends off an AJAX GET request to get the success message.<br>
+              <br>*** Note: The data sent to the GET request in the last example is built from any page that's not the dashboard ***<br>
+              <strong>File + Line Num: statics/userScripts.js from line 5 to 28 is an example of a POST</strong><br>
+              <strong>File + Line Num: dashboard/statics/dashboardScripts.js from line 50 to 124 is another example of a POST</strong><br>
+              <strong>File + Line Num: statics/scripts.js from line 9 to 34 is an example of GET</strong><br>
+              <strong>File + Line Num: logout.php from line 11 to 16 is another example of GET</strong><br>
+
+            </p>
           </div>
         </div>
         <hr>
