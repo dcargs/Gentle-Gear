@@ -158,7 +158,8 @@
             <p><strong>Picture Page</strong><br>
               When you are logged in with the test account, if you click on `View Items` on your dashboard, it will populate all of the items in the database.
               You can then edit or delete them and their pictures show up.<br>
-              <strong>File + Line Num: blog.php from line 5 to 9 is an example of an embedded video</strong><br>
+              <strong>File + Line Num: /dashboard/views/dashboard.php on line 5 the view is called</strong><br>
+              <strong>File + Line Num: /dashboard/controller.php from line 50 to 83 the view of pictures is built</strong><br>
             </p>
           </div>
         </div>
@@ -170,8 +171,7 @@
           <div class="col-md-8">
             <p><strong>YouTube Video</strong><br>
               On the blog page the first post is an embedded YouTube video on how to change a flat<br>
-              <strong>File + Line Num: /dashboard/views/dashboard.php on line 5 the view is called</strong><br>
-              <strong>File + Line Num: /dashboard/controller.php from line 50 to 83 the view of pictures is built</strong><br>
+              <strong>File + Line Num: blog.php from line 5 to 9 is an example of an embedded video</strong><br>
             </p>
           </div>
         </div>
