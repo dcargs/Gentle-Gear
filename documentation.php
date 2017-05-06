@@ -129,7 +129,7 @@
             <label>8.</label>
           </div>
           <div class="col-md-8">
-            <p><strong>Must Use Form Elements</strong><br>
+            <p><strong>Advanced Forms</strong><br>
               I have fulfilled this requirment by allowing the user to fill out a form while logged in that allows for image uploads.
               It's going further than just a login form because I'm using this encryption type to send the data, enctype="multipart/form-data".<br>
               <strong>File + Line Num: /dashboard/controller.php from line 177 to 240 is an example of advanced form usage</strong><br>
@@ -142,7 +142,7 @@
             <label>9.</label>
           </div>
           <div class="col-md-8">
-            <p><strong>Feedback to Users with Forms</strong><br>
+            <p><strong>Feedback to Users from Forms</strong><br>
               I have fulfilled this requirement by when you login if you enter the wrong credentials it gives you feedback as to if you got it right or wrong.
               If the login is sucessful you get redirected to the dashboard but if it fails you are presented with an error message at the bottom of the screen.<br>
               <strong>File + Line Num: /statics/userScripts.js from line 5 to 29 is an example of how I give the user feedback</strong><br>
@@ -155,7 +155,11 @@
             <label>10.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>Picture Page</strong><br>
+              When you are logged in with the test account, if you click on `View Items` on your dashboard, it will populate all of the items in the database.
+              You can then edit or delete them and their pictures show up.<br>
+              <strong>File + Line Num: blog.php from line 5 to 9 is an example of an embedded video</strong><br>
+            </p>
           </div>
         </div>
         <hr>
@@ -164,7 +168,11 @@
             <label>11.</label>
           </div>
           <div class="col-md-8">
-            explanation of how I did this
+            <p><strong>YouTube Video</strong><br>
+              On the blog page the first post is an embedded YouTube video on how to change a flat<br>
+              <strong>File + Line Num: /dashboard/views/dashboard.php on line 5 the view is called</strong><br>
+              <strong>File + Line Num: /dashboard/controller.php from line 50 to 83 the view of pictures is built</strong><br>
+            </p>
           </div>
         </div>
         <hr>
